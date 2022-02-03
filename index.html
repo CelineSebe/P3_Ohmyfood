@@ -21,31 +21,30 @@
                 <div id="searchSection">
                     <form method="post" action="traitement.php">
                         <label for="localisation"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                        <input type="ville" name="localisation" id="localisation" placeholder="Paris, Belleville">
+                        <input type="text" name="localisation" id="localisation" placeholder="Paris, Belleville">
                     </form>
                 </div>
                 <div id="searchRestaurant"> 
-                    <h1> Réservez le menu qui </br> vous convient </h1>
-                    <h2> Découvrez des restaurants d'exception,</br> selectionnés par nos soins.<h2>
-                    <a href= "#restaurants">
-                        <input type=submit value="Explorer nos restaurants" class="button">
-                    </a>
+                    <h1> Réservez le menu qui <br> vous convient </h1>
+                    <h2> Découvrez des restaurants d'exception,<br> selectionnés par nos soins.</h2>
+                    <button class="button">
+                        Explorer nos restaurants
+                    </button>
                 </div>
                 
                 <div id="functioning">
                     <h3> Fonctionnement </h3>
-                        <ul> 
+           
                             <div class="card">
-                                <li class="functioning"><span class="serial-number"> 1 </span><i class="fa fa-tablet" aria-hidden="true"> Choisissez un restaurant</i>
-                            </div></li>
+                                <ul><li class="functioning"><span class="serial-number"> 1 </span><i class="fa fa-tablet" aria-hidden="true"> Choisissez un restaurant</i>
+                                <li></ul></div>
                             <div class="card">
-                                <li class="functioning"><span class="serial-number"> 2 </span><i class="fa fa-list" aria-hidden="true"> Composez votre menu</i>
-                            </div></li>
+                               <ul><li class="functioning"><span class="serial-number"> 2 </span><i class="fa fa-list" aria-hidden="true"> Composez votre menu</i>
+                            </li></ul></div>
                             <div class="card">
-                                <li class="functioning"><span class="serial-number"> 3 </span><i class="fa fa-store" aria-hidden="true"> Dégustez au restaurant</i>
-                            </div> </li>                    
-                        </ul>
-                    </div>
+                                <ul><li class="functioning"><span class="serial-number"> 3 </span><i class="fa fa-store" aria-hidden="true"> Dégustez au restaurant</i>
+                            </li></ul></div>                
+                         
                 </div>
             </header>
 
@@ -58,9 +57,10 @@
                     <h3> Restaurants </h3>
                     <div class="card-container">
                         <div class= "card">
-                            <a href="lapalettedugout.html" target="blank">
-                                <figure>
+                            <figure>
+                                <a href="lapalettedugout.html" target="blank">
                                     <img src="images/restaurants/xsmall/jay-wennington-N_Y88TWmGwA-xsmall.jpg" alt="la palette du goût">
+                                </a>
                                     <button class="button__button--new">
                                         Nouveau
                                     </button>
@@ -71,14 +71,14 @@
                                         <i class="fas fa-heart" aria-hidden="true"></i>                                    
                                     </figcaption>
                                 </figure>
-                            </a>
                         </div>
                     </div>
                     <div class="card-container">
                         <div class="card">
-                            <a href="lanoteenchantee.html" target="blank">
-                                <figure>
+                            <figure>
+                                <a href="lanoteenchantee.html" target="blank">
                                     <img src="images/restaurants/xsmall/louis-hansel-shotsoflouis-qNBGVyOCY8Q-xsmall.jpg" alt="la note enchantée">
+                                </a>
                                     <button class="button__button--new">
                                         Nouveau
                                     </button>
@@ -88,39 +88,38 @@
                                         <i class="far fa-heart" aria-hidden="true"></i>
                                         <i class="fas fa-heart" aria-hidden="true"></i>
                                     </figcaption>
-                                </figure>
-                            </a>
+                            </figure>                        
                         </div>
                     </div>
                     <div class="card-container">
                         <div class="card">
-                            <a href="alafrancaise.html" target="blank">
-                                <figure>
-                                <img src="images/restaurants/xsmall/stil-u2Lp8tXIcjw-xsmall.jpg" alt=" A la française">
+                            <figure>
+                                <a href="alafrancaise.html" target="blank">
+                                    <img src="images/restaurants/xsmall/stil-u2Lp8tXIcjw-xsmall.jpg" alt=" A la française">
+                                </a>
                                     <figcaption class="card-body">
                                         <h4> A la française </h4>
                                         <p> Cité rouge </p>
-                                        <i class="far fa-heart"aria-hidden="true"></i>
-                                        <i class="fas fa-heart"aria-hidden="true"></i>
+                                        <i class="far fa-heart" aria-hidden="true"></i>
+                                        <i class="fas fa-heart" aria-hidden="true"></i>
                                     </figcaption>
-                                </figure>
-                            </a>
+                            </figure>                            
                         </div>
                         
                     </div>
                     <div class="card-container">
-                        <div class="card">
-                            <a href="ledelicedessens.html" target="blank">
-                                <figure>
+                        <div class="card">                            
+                            <figure>
+                                <a href="ledelicedessens.html" target="blank">
                                     <img src="images/restaurants/xsmall/toa-heftiba-DQKerTsQwi0-xsmall.jpg" alt="Le délice des sens">
-                                        <figcaption class="card-body">
+                                </a>    
+                                    <figcaption class="card-body">
                                             <h4> Le délice des sens </h4>
                                             <p> Folie-Mericourt </p>
-                                            <i class="far fa-heart"aria-hidden="true"></i>
-                                            <i class="fas fa-heart"aria-hidden="true"></i>
-                                        </figcaption>
-                                </figure>
-                            </a>
+                                            <i class="far fa-heart" aria-hidden="true"></i>
+                                            <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </figcaption>
+                            </figure>                       
                         </div>
                     </div>
                 </section>
