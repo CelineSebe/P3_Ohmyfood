@@ -1,0 +1,101 @@
+header 
+{
+    min-height: 150px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    text-indent: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    #topLogo
+  {
+      padding-top: 5px;
+      max-width: 180px;
+      padding-left:20px;
+      padding-right: 120px;
+   
+  }
+    #searchSection
+  {
+    height: 20px;
+    width: 480px;
+    text-align: center;
+    background-color: rgb(226, 221, 221);
+    border-top-color:rgb(150, 147, 147);
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-top: solid 1px grey;
+    box-shadow: 0px 5px 5px top rgb(46, 45, 45) inset;
+    padding: 8px;
+        #localisation
+        {
+        background-color:  rgb(226, 221, 221);
+        border: none;
+        justify-content: center;
+        }      
+  }  
+    #searchRestaurant
+  {
+        width: 480px;
+        background-color: rgb(243, 240, 240);
+        word-spacing: normal;
+        justify-content: stretch;
+        font-weight: normal;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p
+      {
+        margin: 15px;
+        font: normal normal 22px/ 33px "Roboto", Tahoma;
+        text-align: center;
+      }
+
+  }
+  #functioning h3
+  {
+      padding: 20px;
+      text-align: left;
+      font-weight: bold; 
+  }
+  #functioning .card
+  {
+      display: flex;
+      height: 50px;
+      width: 320px;
+      justify-content: center;
+      align-items: center;
+      font: normal bold 25px/ 30px "Roboto" Tahoma;
+      background-color: rgb(236, 230, 230);
+      box-shadow:0px 5px 20px  rgb(150, 147, 147);
+      margin: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      border-top: none;
+      overflow-x: none;
+      
+      .serial-number 
+      {
+       
+        position: absolute;
+        align-self: center;
+        left: 60px;
+        height: 28px;
+        border-radius: 30px;
+        font-weight: normal;
+        color: whitesmoke;
+        background-color: $primary-color;
+        padding-inline-start: 12px;
+        padding-inline-end: 12px;
+        padding-top: 8px;        
+        
+      }
+      i{
+        position: relative;
+        align-items: center;
+        padding-top: 12px;
+        height: 20px;
+      }
+  }
+}

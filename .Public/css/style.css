@@ -1,0 +1,309 @@
+header {
+  min-height: 150px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  text-indent: 2px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header #topLogo {
+  padding-top: 5px;
+  max-width: 180px;
+  padding-left: 20px;
+  padding-right: 120px;
+}
+header #searchSection {
+  height: 20px;
+  width: 480px;
+  text-align: center;
+  background-color: #e2dddd;
+  border-top-color: #969393;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-top: solid 1px grey;
+  box-shadow: 0px 5px 5px top #2e2d2d inset;
+  padding: 8px;
+}
+header #searchSection #localisation {
+  background-color: #e2dddd;
+  border: none;
+  justify-content: center;
+}
+header #searchRestaurant {
+  width: 480px;
+  background-color: #f3f0f0;
+  word-spacing: normal;
+  justify-content: stretch;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header #searchRestaurant p {
+  margin: 15px;
+  font: normal normal 22px/33px "Roboto", Tahoma;
+  text-align: center;
+}
+header #functioning h3 {
+  padding: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+header #functioning .card {
+  display: flex;
+  height: 50px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  font: normal bold 25px/30px "Roboto" Tahoma;
+  background-color: #ece6e6;
+  box-shadow: 0px 5px 20px #969393;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border-top: none;
+  overflow-x: none;
+}
+header #functioning .card .serial-number {
+  position: absolute;
+  align-self: center;
+  left: 60px;
+  height: 28px;
+  border-radius: 30px;
+  font-weight: normal;
+  color: whitesmoke;
+  background-color: #9356DC;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  padding-top: 8px;
+}
+header #functioning .card i {
+  position: relative;
+  align-items: center;
+  padding-top: 12px;
+  height: 20px;
+}
+
+#restaurants .card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  height: 310px;
+  width: 350px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 0px 5px 20px #b8b7b7;
+  overflow-x: none;
+  border-radius: 20px;
+}
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+.card img {
+  display: block;
+  height: 220px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.card.card-body {
+  position: absolute;
+  padding-left: 30px;
+  flex-direction: column;
+}
+
+i.fas, i.far {
+  position: absolute;
+  cursor: pointer;
+  font-size: xx-large;
+  right: 40px;
+  bottom: 30px;
+}
+
+i.fas {
+  opacity: 0;
+  color: #9356DC;
+}
+i.fas:hover, i.fas:active {
+  animation: heart-grow 1000ms ease-in-out;
+  opacity: 1;
+}
+
+#menus .card-container {
+  background: gray;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px #b8b7b7;
+}
+
+.button {
+  background: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+  font-size: 18px;
+  color: whitesmoke;
+  box-sizing: content-box;
+  padding: 5px;
+  margin: 20px;
+  border-top: 20px;
+  border-style: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px #969393;
+  height: 50px;
+  width: 260px;
+}
+.button__button--new {
+  display: grid;
+  font-weight: bold;
+  place-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+  height: 30px;
+  background: #99E2D0;
+  color: #1b6150;
+  border-radius: 5px;
+}
+.button:hover {
+  transform: scale(1.02);
+  transition: 0, 2s;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  width: auto;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", Tahoma, sans-serif;
+  flex-direction: column;
+  color: black;
+  max-width: 480px;
+}
+
+h1 {
+  font: normal bolder 22px/33px "Roboto", Tahoma;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 10px;
+  margin: 15px;
+  font: normal normal 22px/33px "Roboto", Tahoma;
+  text-align: center;
+}
+
+h3 {
+  font: normal bolder 22px/33px "Roboto", Tahoma;
+  text-align: left;
+  padding-left: 20px;
+}
+
+h4 {
+  font: normal bolder 18px/28px "Roboto", Tahoma;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+h5 {
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font: normal bold 15px/20px "Roboto" Tahoma;
+  text-align: left;
+  padding-left: 25px;
+}
+
+/*** Section LOGO, recherche, navbar***/
+/***Section de localisation et recherche des restaurants***/
+main {
+  min-height: 150px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-indent: 2px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  flex-direction: column;
+}
+
+#restaurants {
+  width: 420px;
+  background-color: #f3f0f0;
+  word-spacing: normal;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  text-decoration: none;
+}
+#restaurants p {
+  font-weight: normal;
+}
+#restaurants a {
+  text-align: left;
+  text-decoration: none;
+}
+
+/***Section footer***/
+footer {
+  min-height: 150px;
+  padding: 0 50px;
+  display: flex;
+  align-content: center;
+  text-indent: 2px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: whitesmoke;
+}
+footer .footerTitle {
+  font: oblique normal 18px/24px "Shrikhand";
+}
+footer .footernav {
+  height: 160px;
+  width: 450px;
+  background-color: #535050;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+}
+footer .footernav a {
+  text-align: center;
+  font: normal normal 16px/22px "Roboto" Tahoma;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=style.css.map */
