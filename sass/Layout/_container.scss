@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 15px;
     
 }
 
@@ -17,6 +18,7 @@
         box-shadow: 0px 5px 20px rgb(184, 183, 183);
         overflow-x: none;
         border-radius: 20px;
+        
         &:hover {
           transform: scale(1.01);
           transition: 0.2s;  
@@ -31,12 +33,11 @@
       }
 
 
-  .card.card-body
+  .card-body
   {  
-    
-    position: absolute;
-    padding-left: 30px;
-    flex-direction: column;
+ 
+    padding-bottom: 15px;
+    padding-left: 12px;
 
           
 }

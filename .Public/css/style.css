@@ -4,6 +4,7 @@ header {
   display: flex;
   align-items: center;
   text-indent: 2px;
+  text-align: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -16,7 +17,6 @@ header #topLogo {
 header #searchSection {
   height: 20px;
   width: 480px;
-  text-align: center;
   background-color: #e2dddd;
   border-top-color: #969393;
   border-right-style: none;
@@ -29,7 +29,7 @@ header #searchSection {
 header #searchSection #localisation {
   background-color: #e2dddd;
   border: none;
-  justify-content: center;
+  text-align: center;
 }
 header #searchRestaurant {
   width: 480px;
@@ -45,7 +45,7 @@ header #searchRestaurant p {
   font: normal normal 22px/33px "Roboto", Tahoma;
   text-align: center;
 }
-header #functioning h3 {
+header #functioning {
   padding: 20px;
   text-align: left;
   font-weight: bold;
@@ -89,6 +89,7 @@ header #functioning .card i {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  padding: 15px;
 }
 
 .card {
@@ -113,10 +114,9 @@ header #functioning .card i {
   width: 100%;
 }
 
-.card.card-body {
-  position: absolute;
-  padding-left: 30px;
-  flex-direction: column;
+.card-body {
+  padding-bottom: 15px;
+  padding-left: 12px;
 }
 
 i.fas, i.far {
@@ -187,6 +187,7 @@ body {
 }
 
 body {
+  display: flex;
   box-sizing: border-box;
   font-family: "Roboto", Tahoma, sans-serif;
   flex-direction: column;
@@ -200,8 +201,6 @@ h1 {
 }
 
 h2 {
-  padding-left: 10px;
-  margin: 15px;
   font: normal normal 22px/33px "Roboto", Tahoma;
   text-align: center;
 }
@@ -209,13 +208,11 @@ h2 {
 h3 {
   font: normal bolder 22px/33px "Roboto", Tahoma;
   text-align: left;
-  padding-left: 20px;
 }
 
 h4 {
   font: normal bolder 18px/28px "Roboto", Tahoma;
   text-align: left;
-  padding-left: 25px;
   padding-top: 20px;
 }
 
@@ -230,7 +227,6 @@ h6 {
 a {
   color: black;
   text-align: center;
-  justify-content: center;
 }
 
 ul {
@@ -240,20 +236,17 @@ ul {
 p {
   font: normal bold 15px/20px "Roboto" Tahoma;
   text-align: left;
-  padding-left: 25px;
 }
 
 /*** Section LOGO, recherche, navbar***/
 /***Section de localisation et recherche des restaurants***/
 main {
-  min-height: 150px;
   padding: 0 20px;
   display: flex;
   align-items: center;
-  text-indent: 2px;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  text-align: center;
   flex-direction: column;
 }
 
@@ -261,24 +254,16 @@ main {
   width: 420px;
   background-color: #f3f0f0;
   word-spacing: normal;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  margin: 10px;
   color: black;
-  text-decoration: none;
-}
-#restaurants p {
-  font-weight: normal;
-}
-#restaurants a {
-  text-align: left;
   text-decoration: none;
 }
 
 /***Section footer***/
 footer {
   min-height: 150px;
-  padding: 0 50px;
+  margin: 20px;
   display: flex;
   align-content: center;
   text-indent: 2px;
@@ -296,7 +281,7 @@ footer .footernav {
   background-color: #535050;
   color: whitesmoke;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
   margin: 10px;
 }
 footer .footernav a {
