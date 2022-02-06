@@ -1,11 +1,42 @@
-#restaurants .card-container 
+#restaurants
 {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 15px;
+
+  text-align: left;
+  display: grid;
+  flex-direction: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+
+#restaurants .card-container 
+{   
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    max-width: 1280px;
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    word-spacing: normal;
+    color: black;
+    text-decoration: none;
+    p {
+        font-weight: normal;
+    }
+   
+    h4 {
+        
+        text-align: left;
+        text-decoration: none;
+    }
+
     
 }
+
 
 .card
     
@@ -19,56 +50,61 @@
         overflow-x: none;
         border-radius: 20px;
         
+        
         &:hover {
-          transform: scale(1.01);
+          transform: scale(1.05);
           transition: 0.2s;  
           }
-        img {
-            display:block;
+          .card-header {
+            position: relative;
+            display: block;
+            justify-content: center;
+            align-items: center;
+          }
+        
+          .button__button--new {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+          }
+        
+          img {
+            display: block;
             height: 220px;
+            width: 100%;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            width: 100%;
-          } 
+          }
+  }
+      
+
+.card-body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
       }
-
-
-  .card-body
-  {  
- 
-    padding-bottom: 15px;
-    padding-left: 12px;
-
-          
-}
-i.fas, i.far
-  {
-    position: absolute;
-    cursor:pointer;
-    font-size: xx-large;
-    right: 40px;
-    bottom: 30px;     
-  }
-
- i.fas
-  {
-opacity: 0;
-color:#9356DC;
-
-  &:hover, &:active
-{
-animation: heart-grow 1000ms ease-in-out;
-opacity: 1;
-}
-  }
-  
-  
-
-
- 
-#menus .card-container
-{
-  background: gray;
-  border-radius: 10px;
-  box-shadow: 0px 5px 20px rgb(184, 183, 183);
-}
+      
+      i.fas,
+      i.far {
+        cursor: pointer;
+        font-size: xx-large;
+   
+      }
+      
+      i.fas {
+        opacity: 1;
+        color: #9356dc;
+      
+        &:hover,
+        &:active {
+          animation: heart-grow 1000ms ease-in-out;
+          opacity: 0;
+        }
+      }
+      
+      #menus .card-container {
+        background: gray;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgb(184, 183, 183);
+      }

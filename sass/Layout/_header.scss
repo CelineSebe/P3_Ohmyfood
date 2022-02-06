@@ -1,70 +1,54 @@
 header 
 {
-    min-height: 150px;
-    padding: 0 50px;
+    
     display: flex;
     align-items: center;
-    text-indent: 2px;
-    text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-
-    #topLogo
+    width: 100%;
+ #topLogo
   {
-      padding-top: 5px;
-      max-width: 180px;
-      padding-left:20px;
-      padding-right: 120px;
-   
+      height: 60px;
+      padding-top: 2px;
+      width: 100%;
+      box-shadow: 0px 10px 13px -7px #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
-    #searchSection
+ #searchSection
   {
-    height: 20px;
-    width: 480px;
+    width: 100%;
+    text-align: center;
     background-color: rgb(226, 221, 221);
-    border-top-color:rgb(150, 147, 147);
-    border-right-style: none;
-    border-left-style: none;
-    border-bottom-style: none;
-    border-top: solid 1px grey;
-    box-shadow: 0px 5px 5px top rgb(46, 45, 45) inset;
+    box-shadow: 0px 10px 13px -7px #000000; 
     padding: 8px;
         #localisation
         {
         background-color:  rgb(226, 221, 221);
         border: none;
         text-align: center;
-        }      
-  }  
+        }
+  }
+  
     #searchRestaurant
   {
-        width: 480px;
+        width: 100%;
         background-color: rgb(243, 240, 240);
         word-spacing: normal;
-        justify-content: stretch;
         font-weight: normal;
         padding-top: 20px;
         padding-bottom: 20px;
-        p
-      {
-        margin: 15px;
-        font: normal normal 22px/ 33px "Roboto", Tahoma;
-        text-align: center;
-      }
-
+        text-align: center;     
   }
-  #functioning
-  {
-      padding: 20px;
-      text-align: left;
-      font-weight: bold; 
-  }
-  #functioning .card
+ 
+ .functioning
   {
       display: flex;
+      position: relative;
+      justify-content: space-around;
       height: 50px;
       width: 320px;
-      justify-content: center;
       align-items: center;
       font: normal bold 25px/ 30px "Roboto" Tahoma;
       background-color: rgb(236, 230, 230);
@@ -78,23 +62,20 @@ header
       .serial-number 
       {
        
-        position: absolute;
-        align-self: center;
-        left: 60px;
-        height: 28px;
-        border-radius: 30px;
-        font-weight: normal;
-        color: whitesmoke;
-        background-color: $primary-color;
-        padding-inline-start: 12px;
-        padding-inline-end: 12px;
-        padding-top: 8px;        
+      position: absolute;
+      align-self: center;
+      left: -15px;
+      height: 28px;
+      border-radius: 50%;
+      font-weight: normal;
+      color: whitesmoke;
+      background-color: $primary-color;
+      padding: 5px 10px 8px 8px;        
         
       }
       i{
         position: relative;
         align-items: center;
-        padding-top: 12px;
         height: 20px;
       }
   }
