@@ -99,8 +99,6 @@ header .functioning i {
 }
 
 .card {
-  height: 310px;
-  width: 350px;
   margin-bottom: 30px;
   margin-top: 30px;
   border: none;
@@ -117,6 +115,8 @@ header .functioning i {
   display: block;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: 100%;
 }
 .card .button__button--new {
   position: absolute;
@@ -130,33 +130,61 @@ header .functioning i {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.card .card-menu {
+  position: relative;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  grid-column-start: h3, p;
+  grid-column-end: p;
+  grid-template-areas: "zone 1 zone 2" "zone 3 zone 2";
+}
 
 .card-body {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 5px;
 }
-
-i.fas,
-i.far {
+.card-body .card-body__text {
+  justify-content: left;
+  padding-bottom: 12px;
+}
+.card-body i.far {
+  justify-content: right;
   cursor: pointer;
   font-size: xx-large;
+  color: black;
 }
-
-i.fas {
+.card-body i.far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
   opacity: 1;
-  color: #9356dc;
-}
-i.fas:hover, i.fas:active {
-  animation: heart-grow 1000ms ease-in-out;
-  opacity: 0;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 #menus .card-container {
-  background: gray;
   border-radius: 10px;
   box-shadow: 0px 5px 20px #b8b7b7;
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #f3f0f0;
+  word-spacing: normal;
+  color: black;
+  text-decoration: none;
 }
 
 .button {
