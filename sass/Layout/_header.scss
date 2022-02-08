@@ -11,17 +11,27 @@ header
       height: 60px;
       padding-top: 2px;
       width: 100%;
-      box-shadow: 0px 10px 13px -7px #000000;
       display: flex;
       justify-content: center;
       align-items: center;
+      img {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .buttonReturn {
+      position: relative;
+      right: 40px;
+      }
   }
+}
  #searchSection
   {
     width: 100%;
     text-align: center;
     background-color: rgb(226, 221, 221);
-    box-shadow: 0px 10px 13px -7px #000000; 
+    box-shadow: 0px 10px 13px 7px #000000; 
     padding: 8px;
         #localisation
         {
@@ -42,8 +52,21 @@ header
         text-align: center;     
   }
  
- .functioning
+ #functioning 
   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 100%;
+    h3 {     
+      position: relative;
+      text-align: left;
+      text-decoration: none;
+        }
+    .functioning
+    {      
       display: flex;
       position: relative;
       justify-content: space-around;
@@ -58,7 +81,7 @@ header
       border-radius: 20px;
       border-top: none;
       overflow-x: none;
-      
+    }
       .serial-number 
       {
        
@@ -78,5 +101,5 @@ header
         align-items: center;
         height: 20px;
       }
+      
   }
-}

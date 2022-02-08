@@ -1,0 +1,35 @@
+ /***Section footer***/
+
+ footer
+{
+     min-height: 150px;
+     display: flex;
+     align-content: center;
+     text-indent: 2px;
+     justify-content: center;
+     flex-wrap: nowrap;
+     text-decoration:none;
+     color: whitesmoke;
+
+     .footerTitle
+    {
+        font: oblique normal 18px/ 24px "Shrikhand"
+    }
+    .footernav
+    {
+        height: 160px;
+        width: 100%;
+        background-color: rgb(83, 80, 80);
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 15px;
+        margin: 10px;
+        a 
+        {
+            text-align: center;
+            font: normal normal 16px/ 22px "Roboto" Tahoma;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+}

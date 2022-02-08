@@ -1,6 +1,6 @@
 @import "./Utils/variables";
 @import "./Layout/header";
-
+@import "./Layout/footer";
 @import "./Layout/container";
 @import "./Composants/buttons";
 
@@ -33,9 +33,6 @@ h3
 {
     font: normal bolder 22px/ 33px "Roboto", Tahoma; 
     padding: 20px;
-        font-weight: bold; 
-        text-align: left;
-
 }
 
 h4
@@ -71,63 +68,21 @@ p
     text-align: left;
 }
 
-
-
-/*** Section LOGO, recherche, navbar***/
-
-
-
-/***Section de localisation et recherche des restaurants***/
-
-main
-{
-    background-color: whitesmoke;
-    width: 100%;
-    margin: 0 auto;
-    text-indent: 2px;
-    flex: display;
-    justify-content: center;
-    align-items: space-around;
-    flex-direction: center;
-
-}
-
-
-
- 
- /***Section footer***/
-
- footer
-{
-     min-height: 150px;
-     margin: 20px;
-     display: flex;
-     align-content: center;
-     text-indent: 2px;
-     justify-content: center;
-     flex-wrap: nowrap;
-     text-decoration:none;
-     color: whitesmoke;
-
-     .footerTitle
-    {
-        font: oblique normal 18px/ 24px "Shrikhand"
-    }
-    .footernav
-    {
-        height: 160px;
-        width: 100%;
-        background-color: rgb(83, 80, 80);
-        color: whitesmoke;
-        text-decoration: none;
-        padding: 15px;
-        margin: 10px;
-        a 
-        {
-            text-align: center;
-            font: normal normal 16px/ 22px "Roboto" Tahoma;
-            text-decoration: none;
-            color: whitesmoke;
-        }
+i.far {
+    justify-content: right;
+    cursor: pointer;
+    font-size: xx-large;
+    color: black;
+    &:hover {
+      animation: fill 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
     }
 }
+
+

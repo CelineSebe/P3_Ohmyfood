@@ -9,24 +9,35 @@ header #topLogo {
   height: 60px;
   padding-top: 2px;
   width: 100%;
-  box-shadow: 0px 10px 13px -7px #000000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header #searchSection {
+header #topLogo img {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #topLogo .buttonReturn {
+  position: relative;
+  right: 40px;
+}
+
+#searchSection {
   width: 100%;
   text-align: center;
   background-color: #e2dddd;
-  box-shadow: 0px 10px 13px -7px #000000;
+  box-shadow: 0px 10px 13px 7px #000000;
   padding: 8px;
 }
-header #searchSection #localisation {
+#searchSection #localisation {
   background-color: #e2dddd;
   border: none;
   text-align: center;
 }
-header #searchRestaurant {
+
+#searchRestaurant {
   width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
@@ -35,7 +46,21 @@ header #searchRestaurant {
   padding-bottom: 20px;
   text-align: center;
 }
-header .functioning {
+
+#functioning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+#functioning h3 {
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+}
+#functioning .functioning {
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -51,7 +76,7 @@ header .functioning {
   border-top: none;
   overflow-x: none;
 }
-header .functioning .serial-number {
+#functioning .serial-number {
   position: absolute;
   align-self: center;
   left: -15px;
@@ -62,10 +87,51 @@ header .functioning .serial-number {
   background-color: #9356DC;
   padding: 5px 10px 8px 8px;
 }
-header .functioning i {
+#functioning i {
   position: relative;
   align-items: center;
   height: 20px;
+}
+
+/***Section footer***/
+footer {
+  min-height: 150px;
+  display: flex;
+  align-content: center;
+  text-indent: 2px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: whitesmoke;
+}
+footer .footerTitle {
+  font: oblique normal 18px/24px "Shrikhand";
+}
+footer .footernav {
+  height: 160px;
+  width: 100%;
+  background-color: #535050;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+footer .footernav a {
+  text-align: center;
+  font: normal normal 16px/22px "Roboto" Tahoma;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0 auto;
+  text-indent: 2px;
+  flex: display;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: center;
 }
 
 #restaurants {
@@ -130,13 +196,14 @@ header .functioning i {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.card .card-menu {
+
+.card-menu {
   position: relative;
   display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 15%;
   width: 100%;
   grid-column-start: h3, p;
   grid-column-end: p;
@@ -170,21 +237,36 @@ header .functioning i {
   font-weight: bold;
 }
 
-#menus .card-container {
-  border-radius: 10px;
-  box-shadow: 0px 5px 20px #b8b7b7;
+#menus {
   display: flex;
-  position: relative;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1280px;
-  width: 100%;
+  text-align: left;
+}
+#menus .img {
+  width: 350px;
+}
+#menus h3 {
+  font: normal bolder 22px/33px "Shrikhand", tahoma;
+  left: 10px;
+}
+#menus .card-container {
+  position: relative;
+  top: -45px;
+  border-radius: 35px;
+  box-shadow: 0px 5px 20px #b8b7b7;
+  width: 352px;
   background-color: #f3f0f0;
   word-spacing: normal;
   color: black;
   text-decoration: none;
+}
+#menus .card-container .button {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -245,8 +327,6 @@ h2 {
 h3 {
   font: normal bolder 22px/33px "Roboto", Tahoma;
   padding: 20px;
-  font-weight: bold;
-  text-align: left;
 }
 
 h4 {
@@ -276,48 +356,21 @@ p {
   text-align: left;
 }
 
-/*** Section LOGO, recherche, navbar***/
-/***Section de localisation et recherche des restaurants***/
-main {
-  background-color: whitesmoke;
-  width: 100%;
-  margin: 0 auto;
-  text-indent: 2px;
-  flex: display;
-  justify-content: center;
-  align-items: space-around;
-  flex-direction: center;
+i.far {
+  justify-content: right;
+  cursor: pointer;
+  font-size: xx-large;
+  color: black;
 }
-
-/***Section footer***/
-footer {
-  min-height: 150px;
-  margin: 20px;
-  display: flex;
-  align-content: center;
-  text-indent: 2px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  text-decoration: none;
-  color: whitesmoke;
-}
-footer .footerTitle {
-  font: oblique normal 18px/24px "Shrikhand";
-}
-footer .footernav {
-  height: 160px;
-  width: 100%;
-  background-color: #535050;
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 15px;
-  margin: 10px;
-}
-footer .footernav a {
-  text-align: center;
-  font: normal normal 16px/22px "Roboto" Tahoma;
-  text-decoration: none;
-  color: whitesmoke;
+i.far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
