@@ -131,7 +131,7 @@ main {
   flex: display;
   justify-content: center;
   align-items: space-around;
-  flex-direction: center;
+  flex-direction: column;
 }
 
 #restaurants {
@@ -169,8 +169,8 @@ main {
   margin-top: 30px;
   border: none;
   box-shadow: 0px 5px 20px #b8b7b7;
-  overflow-x: none;
   border-radius: 20px;
+  width: 100%;
 }
 .card:hover {
   transform: scale(1.05);
@@ -196,18 +196,22 @@ main {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.card-menu {
-  position: relative;
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 15%;
+.card .card-menu {
   width: 100%;
-  grid-column-start: h3, p;
-  grid-column-end: p;
-  grid-template-areas: "zone 1 zone 2" "zone 3 zone 2";
+  height: auto;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.card .card-menu .menu-text {
+  width: 75%;
+  justify-content: left;
+}
+.card .card-menu .container {
+  width: 25%;
+  justify-content: right;
 }
 
 .card-body {
@@ -288,6 +292,20 @@ main {
   flex-direction: column;
   justify-content: right;
   align-items: center;
+}
+
+.container .cout :hover + .ifas fa-check-circle {
+  transform: translateX(-100px);
+  transition: transform 500ms ease-in-out;
+  background: #99E2D0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container .cout :hover + .ifas fa-check-circle .ifas fa-check-circle {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-360deg);
+  transition: transform 300ms ease-in-out;
 }
 
 .button {

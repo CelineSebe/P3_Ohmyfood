@@ -7,7 +7,7 @@ main
     flex: display;
     justify-content: center;
     align-items: space-around;
-    flex-direction: center;
+    flex-direction: column;
 }
 
 
@@ -54,9 +54,8 @@ main
     margin-top: 30px;
     border: none;
     box-shadow: 0px 5px 20px rgb(184, 183, 183);
-    overflow-x: none;
     border-radius: 20px;
-        
+    width: 100%;
         
     &:hover 
       {
@@ -76,7 +75,7 @@ main
     position: absolute;
     top: 5%;
     right: 5%;
-          }
+      }
         
     img {
     display: block;
@@ -85,22 +84,33 @@ main
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
         }
+    
+    .card-menu
+    {
+
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+   
+      .menu-text {  
+    width:75%;
+    justify-content: left;     
+    }
+      .container
+    {
+    width: 25%;
+    justify-content: right;
+    }
   }
-.card-menu
-{
-    position: relative;
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 15%;
-    width: 100%;
-    grid-column-start: h3, p;
-    grid-column-end: p;
-    grid-template-areas:
-    "zone 1 zone 2"
-    "zone 3 zone 2"
 }
+
+
+
+
       
 
 .card-body {
@@ -198,3 +208,19 @@ main
           }
       }
 }
+.container .cout
+ {
+     :hover + .ifas fa-check-circle {
+     transform: translateX(-100px);
+     transition: transform 500ms ease-in-out;
+     background: $tertiary-color;
+     border-radius: 5px;
+     overflow: hidden;
+     .ifas fa-check-circle {
+        width: 100px;
+        height: 100px;
+        transform: rotate(-360deg);
+        transition: transform 300ms ease-in-out;
+     }
+    }
+ }
