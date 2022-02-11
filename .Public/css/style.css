@@ -199,19 +199,40 @@ main {
 .card .card-menu {
   width: 100%;
   height: auto;
-  padding: 2px;
+  padding: 8px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
 .card .card-menu .menu-text {
-  width: 75%;
   justify-content: left;
+  width: 75%;
 }
 .card .card-menu .container {
   width: 25%;
   justify-content: right;
+}
+
+.card-menu .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.card-menu .container .cout {
+  justify-content: left;
+}
+.card-menu .container .check {
+  overflow: hidden;
+  justify-content: right;
+  color: whitesmoke;
+  background: #99E2D0;
+  font-size: x-large;
+  height: 100%;
+  width: 100%;
 }
 
 .card-body {
@@ -294,18 +315,23 @@ main {
   align-items: center;
 }
 
-.container .cout :hover + .ifas fa-check-circle {
-  transform: translateX(-100px);
-  transition: transform 500ms ease-in-out;
-  background: #99E2D0;
-  border-radius: 5px;
-  overflow: hidden;
+.cout:hover + .check {
+  transform: translateX(0px);
 }
-.container .cout :hover + .ifas fa-check-circle .ifas fa-check-circle {
-  width: 100px;
-  height: 100px;
-  transform: rotate(-360deg);
+.cout:hover + .check .ifas {
+  transform: translateX(0px) rotate(0deg);
+}
+
+.check {
+  transform: translateX(25px);
   transition: transform 300ms ease-in-out;
+}
+.check .ifas {
+  overflow-x: hidden;
+  transform: translateX(25px);
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+  display: inline-block;
 }
 
 .button {

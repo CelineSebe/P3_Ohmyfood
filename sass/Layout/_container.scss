@@ -90,15 +90,15 @@ main
 
   width: 100%;
   height: auto;
-  padding: 2px;
+  padding: 8px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
    
       .menu-text {  
-    width:75%;
     justify-content: left;     
+    width: 75%;
     }
       .container
     {
@@ -107,9 +107,29 @@ main
     }
   }
 }
+.card-menu .container {
 
-
-
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+   
+      .cout {  
+    justify-content: left;     
+    }
+      .check
+    {
+    overflow: hidden;
+    justify-content: right;
+    color: whitesmoke;
+    background: $tertiary-color;
+    font-size: x-large;
+    height: 100%;
+    width: 100%;
+    }
+}
 
       
 
@@ -208,19 +228,27 @@ main
           }
       }
 }
-.container .cout
+.cout
  {
-     :hover + .ifas fa-check-circle {
-     transform: translateX(-100px);
-     transition: transform 500ms ease-in-out;
-     background: $tertiary-color;
-     border-radius: 5px;
-     overflow: hidden;
-     .ifas fa-check-circle {
-        width: 100px;
-        height: 100px;
-        transform: rotate(-360deg);
-        transition: transform 300ms ease-in-out;
-     }
-    }
+     &:hover + .check{
+     transform: translateX(0px);
+  
+        .ifas{
+            transform: translateX(0px) rotate(0deg);
+          }
+      }
+  }
+
+.check {
+ transform: translateX(25px);
+ transition: transform 300ms ease-in-out;
+ .ifas{
+   overflow-x: hidden;
+   transform: translateX(25px);
+   transform: rotate(360deg);
+   transition: transform 500ms ease-in-out;
+   display: inline-block;
  }
+}
+
+ 
