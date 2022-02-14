@@ -199,40 +199,41 @@ main {
 .card .card-menu {
   width: 100%;
   height: auto;
-  padding: 8px;
+  padding: 4px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
-.card .card-menu .menu-text {
+.card .card-menu .text-menu {
   justify-content: left;
-  width: 75%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card .card-menu .container {
+  height: 100%;
   width: 25%;
-  justify-content: right;
-}
-
-.card-menu .container {
-  width: 100%;
-  height: auto;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-around;
 }
-.card-menu .container .cout {
-  justify-content: left;
+.card .card-menu .container .cout {
+  font-weight: bold;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  align-items: left;
 }
-.card-menu .container .check {
+.card .card-menu .container .check {
+  position: relative;
+  justify-content: center;
   overflow: hidden;
-  justify-content: right;
   color: whitesmoke;
-  background: #99E2D0;
+  background-color: #99E2D0;
   font-size: x-large;
   height: 100%;
-  width: 100%;
+  width: 60%;
+  align-items: right;
 }
 
 .card-body {
@@ -322,16 +323,17 @@ main {
   transform: translateX(0px) rotate(0deg);
 }
 
-.check {
-  transform: translateX(25px);
+.cout {
+  transform: translateX(-25px);
   transition: transform 300ms ease-in-out;
 }
-.check .ifas {
+.cout .check {
+  transform-origin: 25px;
   overflow-x: hidden;
-  transform: translateX(25px);
-  transform: rotate(360deg);
+  transform: translateX(25px) rotate(360deg);
   transition: transform 500ms ease-in-out;
   display: inline-block;
+  background: #99E2D0;
 }
 
 .button {

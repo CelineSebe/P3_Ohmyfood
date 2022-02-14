@@ -90,45 +90,47 @@ main
 
   width: 100%;
   height: auto;
-  padding: 8px;
+  padding: 4px;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
    
-      .menu-text {  
-    justify-content: left;     
-    width: 75%;
+      .text-menu {  
+    justify-content: left;  
+    text-overflow: ellipsis; 
+    overflow: hidden;   
     }
       .container
     {
+    height: 100%;
     width: 25%;
-    justify-content: right;
-    }
-  }
-}
-.card-menu .container {
-
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-   
-      .cout {  
-    justify-content: left;     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+       .cout {  
+    font-weight: bold;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    align-items: left;
     }
       .check
     {
+    position: relative;
+    justify-content: center; 
     overflow: hidden;
-    justify-content: right;
     color: whitesmoke;
-    background: $tertiary-color;
+    background-color: $tertiary-color;
     font-size: x-large;
     height: 100%;
-    width: 100%;
+    width: 60%;
+    align-items: right;
+    
     }
+
+    }
+  }
 }
 
       
@@ -231,6 +233,7 @@ main
 .cout
  {
      &:hover + .check{
+    
      transform: translateX(0px);
   
         .ifas{
@@ -239,15 +242,16 @@ main
       }
   }
 
-.check {
- transform: translateX(25px);
+.cout {
+ transform: translateX(-25px);
  transition: transform 300ms ease-in-out;
- .ifas{
+ .check{
+   transform-origin: 25px;
    overflow-x: hidden;
-   transform: translateX(25px);
-   transform: rotate(360deg);
+   transform: translateX(25px) rotate(360deg);
    transition: transform 500ms ease-in-out;
    display: inline-block;
+   background: $tertiary-color;
  }
 }
 
