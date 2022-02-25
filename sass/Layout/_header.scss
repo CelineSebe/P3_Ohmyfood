@@ -1,105 +1,30 @@
 header 
-{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
- #topLogo
+{    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 320px;
+
+#top-logo
   {
-      height: 60px;
-      padding-top: 2px;
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 60px;
+      padding-top: 2px;
+      width: 100%;
       img {
       height: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       }
-      .buttonReturn {
+      .button-return {
       position: relative;
       right: 40px;
       }
   }
 }
- #searchSection
-  {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(226, 221, 221);
-    box-shadow: 0px 10px 13px 7px #000000; 
-    padding: 8px;
-        #localisation
-        {
-        background-color:  rgb(226, 221, 221);
-        border: none;
-        text-align: center;
-        }
-  }
-  
-    #searchRestaurant
-  {
-        width: 100%;
-        background-color: rgb(243, 240, 240);
-        word-spacing: normal;
-        font-weight: normal;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: center;     
-  }
- 
- #functioning 
-  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction:column;
-    width: 100%;
-    h3 {     
-      position: relative;
-      text-align: left;
-      text-decoration: none;
-        }
-    .functioning
-    {      
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      height: 50px;
-      width: 320px;
-      align-items: center;
-      font: normal bold 25px/ 30px "Roboto" Tahoma;
-      background-color: rgb(236, 230, 230);
-      box-shadow:0px 5px 20px  rgb(150, 147, 147);
-      margin: 20px;
-      padding: 10px;
-      border-radius: 20px;
-      border-top: none;
-      overflow-x: none;
-    }
-      .serial-number 
-      {
-       
-      position: absolute;
-      align-self: center;
-      left: -15px;
-      height: 28px;
-      border-radius: 50%;
-      font-weight: normal;
-      color: whitesmoke;
-      background-color: $primary-color;
-      padding: 5px 10px 8px 8px;        
-        
-      }
-      i{
-        position: relative;
-        align-items: center;
-        height: 20px;
-      }
-      
-  }
+

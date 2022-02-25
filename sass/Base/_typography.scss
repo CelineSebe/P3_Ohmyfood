@@ -1,0 +1,89 @@
+/*** REGLAGES GENERAUX***/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body 
+{
+    width:100%;
+}
+body{
+    font-family: "Roboto", Tahoma, sans-serif;
+    color: black;
+}
+
+h1 
+{
+   font: normal bolder 22px/ 33px "Roboto", Tahoma;
+   text-align: center;
+}
+
+h2 
+{
+    font: normal normal 22px/ 33px "Roboto", Tahoma;
+    text-align: center;
+}
+
+h3
+{
+    font: normal bolder 22px/ 33px "Roboto", Tahoma; 
+    padding: 20px;
+    text-align: left;
+}
+
+h4
+{
+    font: underline normal 18px/ 28px "Roboto", Tahoma;
+    padding-top: 20px;
+    text-align: left;
+}
+h5
+{
+    font: normal normal 18px/ 28px "Roboto", Tahoma;
+    text-align: left;
+}
+
+h6
+{
+    text-align: left;
+}
+
+a
+{
+    color: black;
+    text-align: center;    
+}
+
+ul {
+    list-style-type: none;                    
+    }
+  
+a {
+    text-decoration:none;
+}  
+p
+{
+    font: normal bold 14px/ 20px "Roboto" Tahoma;
+    text-align: left;
+}
+
+i.far {
+    justify-content: right;
+    cursor: pointer;
+    font-size: xx-large;
+    color: black;
+    &:hover {
+      animation: fill 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+    }
+}

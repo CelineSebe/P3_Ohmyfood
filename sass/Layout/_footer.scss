@@ -4,6 +4,7 @@
 {
      min-height: 150px;
      display: flex;
+     flex-direction: center;
      align-content: center;
      text-indent: 2px;
      justify-content: center;
@@ -11,12 +12,15 @@
      text-decoration:none;
      color: whitesmoke;
 
-     .footerTitle
+     .footer-title
     {
         font: oblique normal 18px/ 24px "Shrikhand"
     }
-    .footernav
+    .footer-nav
     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 160px;
         width: 100%;
         background-color: rgb(83, 80, 80);

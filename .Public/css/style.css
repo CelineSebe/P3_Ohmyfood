@@ -1,43 +1,145 @@
+/*** REGLAGES GENERAUX***/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", Tahoma, sans-serif;
+  color: black;
+}
+
+h1 {
+  font: normal bolder 22px/33px "Roboto", Tahoma;
+  text-align: center;
+}
+
+h2 {
+  font: normal normal 22px/33px "Roboto", Tahoma;
+  text-align: center;
+}
+
+h3 {
+  font: normal bolder 22px/33px "Roboto", Tahoma;
+  padding: 20px;
+  text-align: left;
+}
+
+h4 {
+  font: underline normal 18px/28px "Roboto", Tahoma;
+  padding-top: 20px;
+  text-align: left;
+}
+
+h5 {
+  font: normal normal 18px/28px "Roboto", Tahoma;
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font: normal bold 14px/20px "Roboto" Tahoma;
+  text-align: left;
+}
+
+i.far {
+  justify-content: right;
+  cursor: pointer;
+  font-size: xx-large;
+  color: black;
+}
+i.far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  min-width: 320px;
 }
-header #topLogo {
-  height: 60px;
-  padding-top: 2px;
-  width: 100%;
+header #top-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60px;
+  padding-top: 2px;
+  width: 100%;
 }
-header #topLogo img {
+header #top-logo img {
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header #topLogo .buttonReturn {
+header #top-logo .button-return {
   position: relative;
   right: 40px;
 }
 
-#searchSection {
-  width: 100%;
-  text-align: center;
+section #search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 420px;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #e2dddd;
   box-shadow: 0px 10px 13px 7px #000000;
   padding: 8px;
+  width: 100%;
 }
-#searchSection #localisation {
+#search #localisation {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
   background-color: #e2dddd;
   border: none;
   text-align: center;
 }
 
-#searchRestaurant {
+section #search-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
@@ -56,16 +158,16 @@ header #topLogo .buttonReturn {
   width: 100%;
 }
 #functioning h3 {
-  position: relative;
   text-align: left;
   text-decoration: none;
 }
-#functioning .functioning {
+
+.card-functioning {
   display: flex;
   position: relative;
   justify-content: space-around;
   height: 50px;
-  width: 320px;
+  width: 280px;
   align-items: center;
   font: normal bold 25px/30px "Roboto" Tahoma;
   background-color: #ece6e6;
@@ -76,7 +178,7 @@ header #topLogo .buttonReturn {
   border-top: none;
   overflow-x: none;
 }
-#functioning .serial-number {
+.card-functioning .serial-number {
   position: absolute;
   align-self: center;
   left: -15px;
@@ -87,59 +189,33 @@ header #topLogo .buttonReturn {
   background-color: #9356DC;
   padding: 5px 10px 8px 8px;
 }
-#functioning i {
+.card-functioning i {
   position: relative;
   align-items: center;
   height: 20px;
 }
 
-/***Section footer***/
-footer {
-  min-height: 150px;
-  display: flex;
-  align-content: center;
-  text-indent: 2px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  text-decoration: none;
-  color: whitesmoke;
-}
-footer .footerTitle {
-  font: oblique normal 18px/24px "Shrikhand";
-}
-footer .footernav {
-  height: 160px;
-  width: 100%;
-  background-color: #535050;
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 15px;
-  margin: 10px;
-}
-footer .footernav a {
-  text-align: center;
-  font: normal normal 16px/22px "Roboto" Tahoma;
-  text-decoration: none;
-  color: whitesmoke;
-}
-
+/***MAIN***/
 main {
   background-color: whitesmoke;
-  width: 100%;
+  max-width: 420px;
   margin: 0 auto;
   text-indent: 2px;
-  flex: display;
+  display: flex;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
   flex-direction: column;
 }
 
 #restaurants {
-  text-align: left;
-  display: grid;
-  flex-direction: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
+}
+#restaurants a {
+  text-decoration: none;
 }
 
 #restaurants .card-container {
@@ -149,7 +225,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 420px;
   width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
@@ -159,14 +235,13 @@ main {
 #restaurants .card-container p {
   font-weight: normal;
 }
-#restaurants .card-container h4 {
+#restaurants .card-container h3 {
   text-align: left;
   text-decoration: none;
 }
 
 .card {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 20px 5px 20px 5px;
   border: none;
   box-shadow: 0px 5px 20px #b8b7b7;
   border-radius: 20px;
@@ -201,12 +276,10 @@ main {
   height: auto;
   padding: 4px;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
 }
-.card .card-menu .text-menu {
-  justify-content: left;
+.card .card-menu .menu-text {
+  justify-content: center;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -215,25 +288,30 @@ main {
   width: 25%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-end;
 }
 .card .card-menu .container .cout {
   font-weight: bold;
-  justify-content: center;
   height: 100%;
   width: 40%;
-  align-items: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 .card .card-menu .container .check {
   position: relative;
-  justify-content: center;
   overflow: hidden;
   color: whitesmoke;
   background-color: #99E2D0;
   font-size: x-large;
   height: 100%;
   width: 60%;
-  align-items: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-body {
@@ -270,9 +348,10 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  min-width: 320px;
 }
 #menus .img {
-  width: 350px;
+  width: 100%;
 }
 #menus h3 {
   display: inline-block;
@@ -300,7 +379,7 @@ main {
   top: -45px;
   border-radius: 35px;
   box-shadow: 0px 5px 20px #b8b7b7;
-  width: 352px;
+  width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
   color: black;
@@ -336,6 +415,40 @@ main {
   background: #99E2D0;
 }
 
+/***Section footer***/
+footer {
+  min-height: 150px;
+  display: flex;
+  flex-direction: center;
+  align-content: center;
+  text-indent: 2px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: whitesmoke;
+}
+footer .footer-title {
+  font: oblique normal 18px/24px "Shrikhand";
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  width: 100%;
+  background-color: #535050;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+}
+footer .footer-nav a {
+  text-align: center;
+  font: normal normal 16px/22px "Roboto" Tahoma;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .button {
   background: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
   font-size: 18px;
@@ -368,78 +481,6 @@ main {
   transform: scale(1.02);
   transition: 0, 2s;
   cursor: pointer;
-}
-
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", Tahoma, sans-serif;
-  color: black;
-}
-
-h1 {
-  font: normal bolder 22px/33px "Roboto", Tahoma;
-  text-align: center;
-}
-
-h2 {
-  font: normal normal 22px/33px "Roboto", Tahoma;
-  text-align: center;
-}
-
-h3 {
-  font: normal bolder 22px/33px "Roboto", Tahoma;
-  padding: 20px;
-}
-
-h4 {
-  font: underline normal 18px/28px "Roboto", Tahoma;
-  padding-top: 20px;
-  text-align: left;
-}
-
-h5 {
-  font: normal normal 18px/28px "Roboto", Tahoma;
-  text-align: left;
-}
-
-h6 {
-  text-align: left;
-}
-
-a {
-  color: black;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-p {
-  font: normal bold 14px/20px "Roboto" Tahoma;
-  text-align: left;
-}
-
-i.far {
-  justify-content: right;
-  cursor: pointer;
-  font-size: xx-large;
-  color: black;
-}
-i.far:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

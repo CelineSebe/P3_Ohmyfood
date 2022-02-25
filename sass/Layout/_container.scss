@@ -1,23 +1,29 @@
+/***MAIN***/
+
 main
 {
     background-color: whitesmoke;
-    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
     text-indent: 2px;
-    flex: display;
+    display: flex;
     justify-content: center;
-    align-items: space-around;
+    align-items: center;
     flex-direction: column;
 }
 
 
 #restaurants
 {
-  text-align: left;
-  display: grid;
-  flex-direction: center;
+  
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
+  a {
+    text-decoration:none;
+  }
 }
 
 
@@ -29,7 +35,7 @@ main
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 420px;
   width: 100%;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
@@ -39,7 +45,7 @@ main
         font-weight: normal;
     }
    
-    h4 {
+    h3 {
         
         text-align: left;
         text-decoration: none;
@@ -49,9 +55,7 @@ main
 
 .card
     
-  { 
-    margin-bottom: 30px;
-    margin-top: 30px;
+  { margin: 20px 5px 20px 5px;
     border: none;
     box-shadow: 0px 5px 20px rgb(184, 183, 183);
     border-radius: 20px;
@@ -87,17 +91,14 @@ main
     
     .card-menu
     {
-
-  width: 100%;
+   width: 100%;
   height: auto;
   padding: 4px;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
    
-      .text-menu {  
-    justify-content: left;  
+      .menu-text {  
+    justify-content: center;
     text-overflow: ellipsis; 
     overflow: hidden;   
     }
@@ -107,25 +108,30 @@ main
     width: 25%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-end;
        .cout {  
     font-weight: bold;
-    justify-content: center;
     height: 100%;
     width: 40%;
-    align-items: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
     }
       .check
     {
     position: relative;
-    justify-content: center; 
     overflow: hidden;
     color: whitesmoke;
     background-color: $tertiary-color;
     font-size: x-large;
     height: 100%;
     width: 60%;
-    align-items: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
     }
 
@@ -172,28 +178,24 @@ main
   align-items: center;
   flex-direction: column;
   width: 100%;
-
-
+  min-width: 320px;
 .img{
-    width:350px;
+    width:100%;
   }
+
   h3
   {
     display: inline-block;
     font: normal normal 22px/ 33px "Shrikhand", tahoma;
     align-items: start;
-
-    
   }
   i.far{
     display: inline-block;
-    align-items: end;
-    
-  
+    align-items: end; 
   }
+
   h4
-  {
-    
+  {  
     font-style: underline;
     white-space: normal;
     display: flex;
@@ -214,7 +216,7 @@ main
   top: -45px;
   border-radius: 35px;
   box-shadow: 0px 5px 20px rgb(184, 183, 183);  
-  width: 352px;
+  width: 100%;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
   color: black;
