@@ -5,7 +5,6 @@ main
     background-color: whitesmoke;
     max-width: 420px;
     margin: 0 auto;
-    text-indent: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,54 +14,48 @@ main
 
 #restaurants
 {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 100%;
-  a {
-    text-decoration:none;
-  }
 }
 
 
-#restaurants .card-container 
+.card-container 
 {   
   display: flex;
-  position: relative;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  max-width: 420px;
+  position: relative;
+  flex-wrap: nowrap;  
   width: 100%;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
   color: black;
   text-decoration: none;
-    p {
-        font-weight: normal;
+    p 
+    {
+      font-weight: normal;
     }
    
-    h3 {
-        
-        text-align: left;
-        text-decoration: none;
+    h3 
+    {  
+      text-align: left;
+      text-decoration: none;
     }
 }
 
 
-.card
-    
-  { margin: 20px 5px 20px 5px;
+#restaurants .card{ 
+    margin: 20px 5px 20px 5px;
     border: none;
     box-shadow: 0px 5px 20px rgb(184, 183, 183);
     border-radius: 20px;
     width: 100%;
         
-    &:hover 
-      {
+    &:hover {
     transform: scale(1.05);
     transition: 0.2s;  
       }
@@ -73,8 +66,7 @@ main
     align-items: center;
     height: auto;
     width: 100%;
-          }
-        
+          } 
     .button__button--new {
     position: absolute;
     top: 5%;
@@ -88,88 +80,102 @@ main
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
         }
-    
-    .card-menu
+}
+#restaurants .card-body {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+  
+  .card-body__text{
+    justify-content: left;
+    padding-bottom: 12px;
+  }
+  i.far {
+    justify-content: right;
+    cursor: pointer;
+    font-size: xx-large;
+    color: black;
+    &:hover {
+      animation: fill 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+      } 
+    }
+  }
+
+#menus .card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+#menus .card
     {
-   width: 100%;
-  height: auto;
-  padding: 4px;
   display: flex;
   flex-direction: row;
-   
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 5px 20px 5px;
+  border: none;
+  box-shadow: 0px 5px 20px rgb(184, 183, 183);
+  border-radius: 20px;
+  height: 70px;
+  width:100%;
+  overflow:hidden;
+    
       .menu-text {  
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
     text-overflow: ellipsis; 
-    overflow: hidden;   
+    width: 70%;
+    padding: 4px 4px 4px 4px; 
     }
       .container
     {
-    height: 100%;
-    width: 25%;
     display: flex;
     flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 70px;
+    width: 30%;
+  
+        
+    p {  
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      font-weight: bold;
+      height: 100%;
+      padding-right: 10px;
+      }
+
+   .check {
+    display:flex;
     justify-content: center;
-    align-items: flex-end;
-       .cout {  
-    font-weight: bold;
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    }
-      .check
-    {
-    position: relative;
-    overflow: hidden;
+    align-items:center;
     color: whitesmoke;
     background-color: $tertiary-color;
     font-size: x-large;
     height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    border-radius: 0px 20px 20px 0px;
     
     }
-
-    }
   }
-}
+} 
 
       
-
-.card-body {
-        display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-        align-items:center;
-        
-        .card-body__text{
-          justify-content: left;
-          padding-bottom: 12px;
-        }
-        i.far {
-          justify-content: right;
-          cursor: pointer;
-          font-size: xx-large;
-          color: black;
-          &:hover {
-            animation: fill 0.3s ease-in-out;
-            display: inline-block;
-            opacity: 1;
-            background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color:transparent;
-            font-weight: bold;
-      }
-  
-    }
-
-  }
       
 #menus {
   display: flex;
@@ -177,8 +183,8 @@ main
   justify-content:center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  min-width: 320px;
+  width: 420px;
+
 .img{
     width:100%;
   }
@@ -189,6 +195,7 @@ main
     font: normal normal 22px/ 33px "Shrikhand", tahoma;
     align-items: start;
   }
+
   i.far{
     display: inline-block;
     align-items: end; 
@@ -207,16 +214,15 @@ main
     white-space: normal;
     padding: 5px;
   }
+}
   
-
-.card-container {
-
+#menus .card-container {
   padding-top: 25px;
   position: relative;
   top: -45px;
   border-radius: 35px;
   box-shadow: 0px 5px 20px rgb(184, 183, 183);  
-  width: 100%;
+  max-width: 420px;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
   color: black;
@@ -230,31 +236,33 @@ main
     justify-content:right;
     align-items:center;
           }
-      }
-}
-.cout
- {
-     &:hover + .check{
-    
-     transform: translateX(0px);
-  
-        .ifas{
-            transform: translateX(0px) rotate(0deg);
-          }
-      }
   }
 
-.cout {
- transform: translateX(-25px);
- transition: transform 300ms ease-in-out;
- .check{
-   transform-origin: 25px;
-   overflow-x: hidden;
-   transform: translateX(25px) rotate(360deg);
+  .card
+  {
+    &:hover > .container{
+          transform: translateX(0px);
+        
+              i{
+                transform: rotate(0deg);
+                }
+        }
+  
+  
+  .container{
+   transform: translateX(70px);
    transition: transform 500ms ease-in-out;
-   display: inline-block;
-   background: $tertiary-color;
- }
+   overflow: hidden;
+      i{ 
+     transform: rotate(360deg);
+     transition: transform 500ms ease-in-out;
+    }
+  }
 }
+
+
+
+
+ 
 
  

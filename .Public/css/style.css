@@ -200,7 +200,6 @@ main {
   background-color: whitesmoke;
   max-width: 420px;
   margin: 0 auto;
-  text-indent: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,44 +213,40 @@ main {
   align-content: center;
   width: 100%;
 }
-#restaurants a {
-  text-decoration: none;
-}
 
-#restaurants .card-container {
+.card-container {
   display: flex;
-  position: relative;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  max-width: 420px;
+  position: relative;
+  flex-wrap: nowrap;
   width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
   color: black;
   text-decoration: none;
 }
-#restaurants .card-container p {
+.card-container p {
   font-weight: normal;
 }
-#restaurants .card-container h3 {
+.card-container h3 {
   text-align: left;
   text-decoration: none;
 }
 
-.card {
+#restaurants .card {
   margin: 20px 5px 20px 5px;
   border: none;
   box-shadow: 0px 5px 20px #b8b7b7;
   border-radius: 20px;
   width: 100%;
 }
-.card:hover {
+#restaurants .card:hover {
   transform: scale(1.05);
   transition: 0.2s;
 }
-.card .card-header {
+#restaurants .card .card-header {
   position: relative;
   display: block;
   justify-content: center;
@@ -259,78 +254,36 @@ main {
   height: auto;
   width: 100%;
 }
-.card .button__button--new {
+#restaurants .card .button__button--new {
   position: absolute;
   top: 5%;
   right: 5%;
 }
-.card img {
+#restaurants .card img {
   display: block;
   height: 220px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.card .card-menu {
-  width: 100%;
-  height: auto;
-  padding: 4px;
-  display: flex;
-  flex-direction: row;
-}
-.card .card-menu .menu-text {
-  justify-content: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.card .card-menu .container {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-}
-.card .card-menu .container .cout {
-  font-weight: bold;
-  height: 100%;
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-}
-.card .card-menu .container .check {
-  position: relative;
-  overflow: hidden;
-  color: whitesmoke;
-  background-color: #99E2D0;
-  font-size: x-large;
-  height: 100%;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
-.card-body {
+#restaurants .card-body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.card-body .card-body__text {
+#restaurants .card-body .card-body__text {
   justify-content: left;
   padding-bottom: 12px;
 }
-.card-body i.far {
+#restaurants .card-body i.far {
   justify-content: right;
   cursor: pointer;
   font-size: xx-large;
   color: black;
 }
-.card-body i.far:hover {
+#restaurants .card-body i.far:hover {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -341,14 +294,72 @@ main {
   font-weight: bold;
 }
 
+#menus .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menus .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 5px 20px 5px;
+  border: none;
+  box-shadow: 0px 5px 20px #b8b7b7;
+  border-radius: 20px;
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+}
+#menus .card .menu-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  width: 70%;
+  padding: 4px 4px 4px 4px;
+}
+#menus .card .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  height: 70px;
+  width: 30%;
+}
+#menus .card .container p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  height: 100%;
+  padding-right: 10px;
+}
+#menus .card .container .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-color: #99E2D0;
+  font-size: x-large;
+  height: 100%;
+  width: 50%;
+  border-radius: 0px 20px 20px 0px;
+}
+
 #menus {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  min-width: 320px;
+  width: 420px;
 }
 #menus .img {
   width: 100%;
@@ -373,13 +384,14 @@ main {
   white-space: normal;
   padding: 5px;
 }
+
 #menus .card-container {
   padding-top: 25px;
   position: relative;
   top: -45px;
   border-radius: 35px;
   box-shadow: 0px 5px 20px #b8b7b7;
-  width: 100%;
+  max-width: 420px;
   background-color: #f3f0f0;
   word-spacing: normal;
   color: black;
@@ -395,24 +407,20 @@ main {
   align-items: center;
 }
 
-.cout:hover + .check {
+.card:hover > .container {
   transform: translateX(0px);
 }
-.cout:hover + .check .ifas {
-  transform: translateX(0px) rotate(0deg);
+.card:hover > .container i {
+  transform: rotate(0deg);
 }
-
-.cout {
-  transform: translateX(-25px);
-  transition: transform 300ms ease-in-out;
-}
-.cout .check {
-  transform-origin: 25px;
-  overflow-x: hidden;
-  transform: translateX(25px) rotate(360deg);
+.card .container {
+  transform: translateX(70px);
   transition: transform 500ms ease-in-out;
-  display: inline-block;
-  background: #99E2D0;
+  overflow: hidden;
+}
+.card .container i {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
 }
 
 /***Section footer***/
