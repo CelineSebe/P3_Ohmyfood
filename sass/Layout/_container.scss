@@ -22,7 +22,7 @@ main
 }
 
 
-.card-container 
+#restaurants.card-container 
 {   
   display: flex;
   flex-direction: column;
@@ -42,7 +42,6 @@ main
    
     h3 
     {  
-      text-align: left;
       text-decoration: none;
     }
 }
@@ -157,7 +156,8 @@ main
       align-items:center;
       font-weight: bold;
       height: 100%;
-      padding-right: 10px;
+      padding-right: 20px;
+      text-overflow: ellipsis;
       }
 
    .check {
@@ -222,7 +222,7 @@ main
   top: -45px;
   border-radius: 35px;
   box-shadow: 0px 5px 20px rgb(184, 183, 183);  
-  max-width: 420px;
+  width:  360px;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
   color: black;
@@ -230,6 +230,11 @@ main
   h5{
     font-style: bold;
     left: 5px;
+    text-overflow: ellipsis;
+  }
+  p{
+    left: 5px;
+    text-overflow: ellipsis;
   }
   .button{
     flex-direction:column;
@@ -252,7 +257,7 @@ main
   .container{
    transform: translateX(70px);
    transition: transform 500ms ease-in-out;
-   overflow: hidden;
+ 
       i{ 
      transform: rotate(360deg);
      transition: transform 500ms ease-in-out;
