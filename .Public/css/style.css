@@ -7,52 +7,77 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(1);
     -webkit-transform: translateY(0);
   }
 }
 #menus .card-container .card:nth-child(1) {
+  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
+  animation: open-card 1s 0ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(2) {
+  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
+  animation: open-card 1s 0ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(3) {
   -webkit-animation: open-card 1s 50ms backwards ease-in-out;
   animation: open-card 1s 50ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(2) {
+#menus .card-container .card:nth-child(4) {
   -webkit-animation: open-card 1s 150ms backwards ease-in-out;
   animation: open-card 1s 150ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(3) {
+#menus .card-container .card:nth-child(5) {
   -webkit-animation: open-card 1s 250ms backwards ease-in-out;
   animation: open-card 1s 250ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(4) {
+#menus .card-container .card:nth-child(6) {
   -webkit-animation: open-card 1s 350ms backwards ease-in-out;
   animation: open-card 1s 350ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(5) {
+#menus .card-container .card:nth-child(7) {
+  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
+  animation: open-card 1s 0ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(8) {
   -webkit-animation: open-card 1s 450ms backwards ease-in-out;
   animation: open-card 1s 450ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(6) {
+#menus .card-container .card:nth-child(9) {
   -webkit-animation: open-card 1s 550ms backwards ease-in-out;
   animation: open-card 1s 550ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(7) {
+#menus .card-container .card:nth-child(10) {
   -webkit-animation: open-card 1s 650ms backwards ease-in-out;
   animation: open-card 1s 650ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(8) {
+#menus .card-container .card:nth-child(11) {
+  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
+  animation: open-card 1s 0ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(12) {
   -webkit-animation: open-card 1s 750ms backwards ease-in-out;
   animation: open-card 1s 750ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(9) {
+#menus .card-container .card:nth-child(13) {
   -webkit-animation: open-card 1s 850ms backwards ease-in-out;
+  animation: open-card 1s 850ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(14) {
+  -webkit-animation: open-card 1s 950ms backwards ease-in-out;
   animation: open-card 1s 950ms backwards ease-in-out;
 }
 
