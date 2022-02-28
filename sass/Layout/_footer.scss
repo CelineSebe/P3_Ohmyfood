@@ -3,30 +3,33 @@
  footer
 {
      min-height: 150px;
+     min-width: 320px;
      display: flex;
-     flex-direction: center;
-     align-content: center;
-     text-indent: 2px;
+     flex-direction: row;
+     text-indent: 8px;
      justify-content: center;
+     align-items: center;
+     text-align: left;
      flex-wrap: nowrap;
      text-decoration:none;
      color: whitesmoke;
 
      .footer-title
     {
-        font: oblique normal 18px/ 24px "Shrikhand"
+        font: oblique normal 18px/ 24px "Shrikhand";
+        text-indent: 8px;
     }
     .footer-nav
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        line-height:22px;
         height: 160px;
         width: 100%;
         background-color: rgb(83, 80, 80);
         color: whitesmoke;
         text-decoration: none;
-        padding: 15px;
         margin: 10px;
         a 
         {
@@ -36,4 +39,16 @@
             color: whitesmoke;
         }
     }
+}
+
+/*** MEDIA QUERIES***/
+@media screen and (min-width: 668px) {
+
+  footer{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
 }

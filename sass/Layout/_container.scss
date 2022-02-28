@@ -19,31 +19,23 @@ main
   justify-content: center;
   align-content: center;
   width: 100%;
+  padding: 10px;
 }
 
 
-#restaurants.card-container 
+#restaurants .card-container 
 {   
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-wrap: nowrap;  
   width: 100%;
   background-color: rgb(243, 240, 240);
   word-spacing: normal;
   color: black;
   text-decoration: none;
-    p 
-    {
-      font-weight: normal;
-    }
-   
-    h3 
-    {  
-      text-decoration: none;
-    }
+      
 }
 
 
@@ -88,7 +80,10 @@ main
   
   .card-body__text{
     justify-content: left;
-    padding-bottom: 12px;
+    padding: 10px;
+    h4{
+      font-weight: 800;
+    }
   }
   i.far {
     justify-content: right;
@@ -111,15 +106,25 @@ main
 #menus .card-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  .menu-title{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    }
+    h3{
+      padding-right: 60px;
+    }  
   }
 
 #menus .card
     {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 20px 5px 20px 5px;
   border: none;
@@ -131,14 +136,14 @@ main
     
       .menu-text {  
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
     text-align: left;
-    flex-wrap: wrap;
-    text-overflow: ellipsis; 
+    padding-left: 8px; 
     width: 70%;
-    padding: 4px 4px 4px 4px; 
+    white-space:nowrap;
+    
     }
       .container
     {
@@ -148,16 +153,15 @@ main
     align-items: center;
     height: 70px;
     width: 30%;
-  
-        
+         
     p {  
       display:flex;
-      justify-content:space-around;
+      justify-content:center;
       align-items:center;
       font-weight: bold;
       height: 100%;
       padding-right: 20px;
-      text-overflow: ellipsis;
+    
       }
 
    .check {
@@ -175,30 +179,43 @@ main
   }
 } 
 
-      
+.card{
+  &:hover h5 {
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden
+        }
+       &:hover p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden
+        }
+}    
       
 #menus {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content:center;
+  flex-direction: column;  
   align-items: center;
-  flex-direction: column;
   width: 420px;
+  min-width: 320px;
 
 .img{
     width:100%;
   }
+  .menu-title{
+    display: inline-flex;
+    flex-direction: row ;
+    h3
+    {
+      align-items:space-around;
+      font: normal normal 22px/ 33px "Shrikhand", tahoma;
+    }
 
-  h3
-  {
-    display: inline-block;
-    font: normal normal 22px/ 33px "Shrikhand", tahoma;
-    align-items: start;
-  }
+    i.far{
+     
 
-  i.far{
-    display: inline-block;
-    align-items: end; 
+    }
   }
 
   h4

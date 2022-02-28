@@ -210,25 +210,19 @@ main {
   justify-content: center;
   align-content: center;
   width: 100%;
+  padding: 10px;
 }
 
-#restaurants.card-container {
+#restaurants .card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-wrap: nowrap;
   width: 100%;
   background-color: #f3f0f0;
   word-spacing: normal;
   color: black;
-  text-decoration: none;
-}
-#restaurants.card-container p {
-  font-weight: normal;
-}
-#restaurants.card-container h3 {
   text-decoration: none;
 }
 
@@ -272,7 +266,10 @@ main {
 }
 #restaurants .card-body .card-body__text {
   justify-content: left;
-  padding-bottom: 12px;
+  padding: 10px;
+}
+#restaurants .card-body .card-body__text h4 {
+  font-weight: 800;
 }
 #restaurants .card-body i.far {
   justify-content: right;
@@ -294,14 +291,24 @@ main {
 #menus .card-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+#menus .card-container .menu-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+#menus .card-container h3 {
+  padding-right: 60px;
 }
 
 #menus .card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 20px 5px 20px 5px;
   border: none;
@@ -313,14 +320,13 @@ main {
 }
 #menus .card .menu-text {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
   text-align: left;
-  flex-wrap: wrap;
-  text-overflow: ellipsis;
+  padding-left: 8px;
   width: 70%;
-  padding: 4px 4px 4px 4px;
+  white-space: nowrap;
 }
 #menus .card .container {
   display: flex;
@@ -332,12 +338,11 @@ main {
 }
 #menus .card .container p {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
   height: 100%;
   padding-right: 20px;
-  text-overflow: ellipsis;
 }
 #menus .card .container .check {
   display: flex;
@@ -351,25 +356,35 @@ main {
   border-radius: 0px 20px 20px 0px;
 }
 
+.card:hover h5 {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+}
+.card:hover p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+}
+
 #menus {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: 420px;
+  min-width: 320px;
 }
 #menus .img {
   width: 100%;
 }
-#menus h3 {
-  display: inline-block;
-  font: normal normal 22px/33px "Shrikhand", tahoma;
-  align-items: start;
+#menus .menu-title {
+  display: inline-flex;
+  flex-direction: row;
 }
-#menus i.far {
-  display: inline-block;
-  align-items: end;
+#menus .menu-title h3 {
+  align-items: space-around;
+  font: normal normal 22px/33px "Shrikhand", tahoma;
 }
 #menus h4 {
   font-style: underline;
@@ -428,28 +443,31 @@ main {
 /***Section footer***/
 footer {
   min-height: 150px;
+  min-width: 320px;
   display: flex;
-  flex-direction: center;
-  align-content: center;
-  text-indent: 2px;
+  flex-direction: row;
+  text-indent: 8px;
   justify-content: center;
+  align-items: center;
+  text-align: left;
   flex-wrap: nowrap;
   text-decoration: none;
   color: whitesmoke;
 }
 footer .footer-title {
   font: oblique normal 18px/24px "Shrikhand";
+  text-indent: 8px;
 }
 footer .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 22px;
   height: 160px;
   width: 100%;
   background-color: #535050;
   color: whitesmoke;
   text-decoration: none;
-  padding: 15px;
   margin: 10px;
 }
 footer .footer-nav a {
@@ -459,6 +477,15 @@ footer .footer-nav a {
   color: whitesmoke;
 }
 
+/*** MEDIA QUERIES***/
+@media screen and (min-width: 668px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .button {
   background: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
   font-size: 18px;
