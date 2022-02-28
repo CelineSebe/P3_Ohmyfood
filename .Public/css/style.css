@@ -1,3 +1,61 @@
+@charset "UTF-8";
+@keyframes open-card {
+  0% {
+    opacity: 0;
+    transform: translateY(0.3);
+    -webkit-transform: translateY(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+#menus .card-container .card:nth-child(1) {
+  -webkit-animation: open-card 1s 50ms backwards ease-in-out;
+  animation: open-card 1s 50ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(2) {
+  -webkit-animation: open-card 1s 150ms backwards ease-in-out;
+  animation: open-card 1s 150ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(3) {
+  -webkit-animation: open-card 1s 250ms backwards ease-in-out;
+  animation: open-card 1s 250ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(4) {
+  -webkit-animation: open-card 1s 350ms backwards ease-in-out;
+  animation: open-card 1s 350ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(5) {
+  -webkit-animation: open-card 1s 450ms backwards ease-in-out;
+  animation: open-card 1s 450ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(6) {
+  -webkit-animation: open-card 1s 550ms backwards ease-in-out;
+  animation: open-card 1s 550ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(7) {
+  -webkit-animation: open-card 1s 650ms backwards ease-in-out;
+  animation: open-card 1s 650ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(8) {
+  -webkit-animation: open-card 1s 750ms backwards ease-in-out;
+  animation: open-card 1s 750ms backwards ease-in-out;
+}
+
+#menus .card-container .card:nth-child(9) {
+  -webkit-animation: open-card 1s 850ms backwards ease-in-out;
+  animation: open-card 1s 950ms backwards ease-in-out;
+}
+
 /*** REGLAGES GENERAUX***/
 * {
   padding: 0px;
@@ -317,6 +375,7 @@ main {
   height: 70px;
   width: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 #menus .card .menu-text {
   display: flex;
@@ -338,7 +397,6 @@ main {
 }
 #menus .card .container p {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-weight: bold;
   height: 100%;
@@ -411,7 +469,7 @@ main {
   text-decoration: none;
 }
 #menus .card-container h5 {
-  font-style: bold;
+  font-weight: bold;
   left: 5px;
   text-overflow: ellipsis;
 }
@@ -440,6 +498,7 @@ main {
   transition: transform 500ms ease-in-out;
 }
 
+/***Délice des sens***/
 /***Section footer***/
 footer {
   min-height: 150px;
