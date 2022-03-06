@@ -3,7 +3,7 @@
 main
 {
     background-color: whitesmoke;
-    max-width: 420px;
+    max-width: 350px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -11,17 +11,11 @@ main
     flex-direction: column;
 }
 
-
 #restaurants
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
-
 
 #restaurants .card-container 
 {   
@@ -31,13 +25,11 @@ main
   align-items: center;
   flex-wrap: nowrap;  
   width: 100%;
-  background-color: rgb(243, 240, 240);
+  background-color: whitesmoke;
   word-spacing: normal;
   color: black;
   text-decoration: none;
-      
 }
-
 
 #restaurants .card{ 
     margin: 20px 5px 20px 5px;
@@ -66,7 +58,8 @@ main
         
     img {
     display: block;
-    height: 220px;
+    object-fit:cover;
+    height: 180px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -89,7 +82,9 @@ main
     justify-content: right;
     cursor: pointer;
     font-size: xx-large;
+    font-weight:lighter;
     color: black;
+    
     &:hover {
       animation: fill 0.3s ease-in-out;
       display: inline-block;
@@ -98,35 +93,95 @@ main
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
-      font-weight: bold;
+      font-weight:bolder;
       } 
     }
   }
 
-#menus .card-container{
+#menus {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    max-width: 350px;    
+    .top_banniere .img{
+      width:100%;
+      }
+}
+
+
+
+#menus .menu-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  
   .menu-title{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    padding-bottom: 30px;
-    padding-top: 40px;
-    }
-    h3{
-      padding-right: 60px;
-    }  
+    justify-content: space-between;
+    padding: 12px;
+    height: 70px;
+    h3{    
+    font: normal normal 22px/ 33px "Shrikhand", tahoma;  
+    }    
   }
+  h4
+  { display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    white-space: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    span{
+    border-bottom: solid 2px $tertiary-color;
+    white-space: none;
+    padding-top: 2px;
+    }
+  }
+    .card-container{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items:center;
+    }
+}
+#menus .menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  position: relative;
+  top: -45px;
+  border:none;
+  border-radius: 35px;  
+  width:350px;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  
 
+  h5{
+    font-weight: bold;
+    text-overflow: ellipsis;
+  }
+  p{
+
+    text-overflow: ellipsis;
+  }
+  .button{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+      }
+  }
+  
 #menus .card
     {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px 5px 20px 5px;
+  margin: 10px 5px 10px 5px;
   border: none;
   box-shadow: 0px 5px 20px rgb(184, 183, 183);
   border-radius: 20px;
@@ -192,73 +247,6 @@ main
     overflow: hidden
         }
 }    
-      
-#menus {
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  width: 420px;
-  min-width: 320px;
-
-.img{
-    width:100%;
-  }
-  .menu-title{
-    display: inline-flex;
-    flex-direction: row ;
-    h3
-    {
-      align-items:space-around;
-      font: normal normal 22px/ 33px "Shrikhand", tahoma;
-    }
-
-    i.far{
-     
-
-    }
-  }
-
-  h4
-  {  
-    font-style: underline;
-    white-space: normal;
-    display: flex;
-  }
-  
-  span {
-    border-bottom: solid 2px $tertiary-color;
-    position: relative;
-    white-space: normal;
-    padding: 5px;
-  }
-}
-  
-#menus .card-container {
-  padding-top: 25px;
-  position: relative;
-  top: -45px;
-  border-radius: 35px;
-  box-shadow: 0px 5px 20px rgb(184, 183, 183);  
-  width:  360px;
-  background-color: rgb(243, 240, 240);
-  word-spacing: normal;
-  color: black;
-  text-decoration: none;
-  h5{
-    font-weight: bold;
-    left: 5px;
-    text-overflow: ellipsis;
-  }
-  p{
-    left: 5px;
-    text-overflow: ellipsis;
-  }
-  .button{
-    flex-direction:column;
-    justify-content:right;
-    align-items:center;
-          }
-  }
 
   .card
   {
@@ -278,9 +266,8 @@ main
       i{ 
      transform: rotate(360deg);
      transition: transform 500ms ease-in-out;
-    }
-  }
+      }
+            }
 }
 
-/***Délice des sens***/
 

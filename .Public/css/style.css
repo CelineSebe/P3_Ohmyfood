@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes open-card {
   0% {
     opacity: 0;
@@ -101,11 +100,14 @@ body {
 h1 {
   font: normal bolder 22px/33px "Roboto", Tahoma;
   text-align: center;
+  line-height: 30px;
 }
 
 h2 {
-  font: normal normal 22px/33px "Roboto", Tahoma;
+  font: normal normal 18px/26px "Roboto", Tahoma;
   text-align: center;
+  line-height: 25px;
+  padding-top: 20px;
 }
 
 h3 {
@@ -150,6 +152,7 @@ i.far {
   cursor: pointer;
   font-size: xx-large;
   color: black;
+  font-weight: lighter;
 }
 i.far:hover {
   animation: fill 0.3s ease-in-out;
@@ -159,7 +162,7 @@ i.far:hover {
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 header {
@@ -231,26 +234,27 @@ section #search-restaurant {
 }
 
 #functioning {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
+  width: 350px;
+  margin: auto;
+  padding: 15px;
 }
 #functioning h3 {
   text-align: left;
-  text-decoration: none;
+}
+#functioning ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-functioning {
+#functioning .card-functioning {
   display: flex;
+  display: column;
+  align-items: center;
   position: relative;
   justify-content: space-around;
   height: 50px;
   width: 280px;
-  align-items: center;
-  font: normal bold 25px/30px "Roboto" Tahoma;
   background-color: #ece6e6;
   box-shadow: 0px 5px 20px #969393;
   margin: 20px;
@@ -259,7 +263,7 @@ section #search-restaurant {
   border-top: none;
   overflow-x: none;
 }
-.card-functioning .serial-number {
+#functioning .card-functioning .serial-number {
   position: absolute;
   align-self: center;
   left: -15px;
@@ -270,16 +274,16 @@ section #search-restaurant {
   background-color: #9356DC;
   padding: 5px 10px 8px 8px;
 }
-.card-functioning i {
+#functioning .card-functioning i {
+  font: normal bold 25px/30px "Roboto" Tahoma;
   position: relative;
-  align-items: center;
   height: 20px;
 }
 
 /***MAIN***/
 main {
   background-color: whitesmoke;
-  max-width: 420px;
+  max-width: 350px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -288,12 +292,8 @@ main {
 }
 
 #restaurants {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 #restaurants .card-container {
@@ -303,7 +303,7 @@ main {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: #f3f0f0;
+  background-color: whitesmoke;
   word-spacing: normal;
   color: black;
   text-decoration: none;
@@ -335,7 +335,8 @@ main {
 }
 #restaurants .card img {
   display: block;
-  height: 220px;
+  object-fit: cover;
+  height: 180px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -358,6 +359,7 @@ main {
   justify-content: right;
   cursor: pointer;
   font-size: xx-large;
+  font-weight: lighter;
   color: black;
 }
 #restaurants .card-body i.far:hover {
@@ -368,24 +370,79 @@ main {
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-#menus .card-container {
+#menus {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  max-width: 350px;
 }
-#menus .card-container .menu-title {
+#menus .top_banniere .img {
+  width: 100%;
+}
+
+#menus .menu-container {
+  display: flex;
+  flex-direction: column;
+}
+#menus .menu-container .menu-title {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  justify-content: space-between;
+  padding: 12px;
+  height: 70px;
 }
-#menus .card-container h3 {
-  padding-right: 60px;
+#menus .menu-container .menu-title h3 {
+  font: normal normal 22px/33px "Shrikhand", tahoma;
+}
+#menus .menu-container h4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  white-space: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+#menus .menu-container h4 span {
+  border-bottom: solid 2px #99E2D0;
+  white-space: none;
+  padding-top: 2px;
+}
+#menus .menu-container .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menus .menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  position: relative;
+  top: -45px;
+  border: none;
+  border-radius: 35px;
+  width: 350px;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+}
+#menus .menu-container h5 {
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+#menus .menu-container p {
+  text-overflow: ellipsis;
+}
+#menus .menu-container .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #menus .card {
@@ -393,7 +450,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px 5px 20px 5px;
+  margin: 10px 5px 10px 5px;
   border: none;
   box-shadow: 0px 5px 20px #b8b7b7;
   border-radius: 20px;
@@ -451,63 +508,6 @@ main {
   overflow: hidden;
 }
 
-#menus {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 420px;
-  min-width: 320px;
-}
-#menus .img {
-  width: 100%;
-}
-#menus .menu-title {
-  display: inline-flex;
-  flex-direction: row;
-}
-#menus .menu-title h3 {
-  align-items: space-around;
-  font: normal normal 22px/33px "Shrikhand", tahoma;
-}
-#menus h4 {
-  font-style: underline;
-  white-space: normal;
-  display: flex;
-}
-#menus span {
-  border-bottom: solid 2px #99E2D0;
-  position: relative;
-  white-space: normal;
-  padding: 5px;
-}
-
-#menus .card-container {
-  padding-top: 25px;
-  position: relative;
-  top: -45px;
-  border-radius: 35px;
-  box-shadow: 0px 5px 20px #b8b7b7;
-  width: 360px;
-  background-color: #f3f0f0;
-  word-spacing: normal;
-  color: black;
-  text-decoration: none;
-}
-#menus .card-container h5 {
-  font-weight: bold;
-  left: 5px;
-  text-overflow: ellipsis;
-}
-#menus .card-container p {
-  left: 5px;
-  text-overflow: ellipsis;
-}
-#menus .card-container .button {
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
-}
-
 .card:hover > .container {
   transform: translateX(0px);
 }
@@ -523,13 +523,12 @@ main {
   transition: transform 500ms ease-in-out;
 }
 
-/***Délice des sens***/
 /***Section footer***/
 footer {
   min-height: 150px;
   min-width: 320px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-indent: 8px;
   justify-content: center;
   align-items: center;
@@ -555,6 +554,7 @@ footer .footer-nav {
   margin: 10px;
 }
 footer .footer-nav a {
+  width: 420px;
   text-align: center;
   font: normal normal 16px/22px "Roboto" Tahoma;
   text-decoration: none;

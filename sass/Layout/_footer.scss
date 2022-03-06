@@ -5,7 +5,7 @@
      min-height: 150px;
      min-width: 320px;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      text-indent: 8px;
      justify-content: center;
      align-items: center;
@@ -33,6 +33,7 @@
         margin: 10px;
         a 
         {
+            width: 420px;
             text-align: center;
             font: normal normal 16px/ 22px "Roboto" Tahoma;
             text-decoration: none;

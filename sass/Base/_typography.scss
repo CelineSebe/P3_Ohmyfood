@@ -20,12 +20,15 @@ h1
 {
    font: normal bolder 22px/ 33px "Roboto", Tahoma;
    text-align: center;
+   line-height: 30px;
 }
 
 h2 
 {
-    font: normal normal 22px/ 33px "Roboto", Tahoma;
+    font: normal normal 18px/ 26px "Roboto", Tahoma;
     text-align: center;
+    line-height: 25px;
+    padding-top: 20px;
 }
 
 h3
@@ -74,6 +77,7 @@ i.far {
     cursor: pointer;
     font-size: xx-large;
     color: black;
+    font-weight:lighter;
     &:hover {
       animation: fill 0.3s ease-in-out;
       display: inline-block;
@@ -82,6 +86,6 @@ i.far {
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
-      font-weight: bold;
+        font-weight:bolder;
     }
 }
