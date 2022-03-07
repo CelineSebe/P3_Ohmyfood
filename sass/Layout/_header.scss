@@ -4,12 +4,14 @@ header
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
+  min-width:320px;
   width: 100%;
-  min-width: 320px;
 
 #top-logo
   {
       display: flex;
+
       justify-content: center;
       align-items: center;
       height: 60px;
@@ -23,8 +25,21 @@ header
       }
       .button-return {
       position: relative;
-      right: 40px;
+      right: 50px;
       }
   }
 }
 
+@media screen and(min-width: 375px){
+  header 
+{    
+  width: 375px;
+}
+}
+
+@media screen and(min-width: 420px){
+  header 
+  {    
+    width: 420px;
+  }
+  }

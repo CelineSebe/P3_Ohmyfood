@@ -2,17 +2,19 @@
 
  footer
 {
-     min-height: 150px;
-     min-width: 320px;
+     
      display: flex;
-     flex-direction: column;
-     text-indent: 8px;
      justify-content: center;
      align-items: center;
      text-align: left;
      flex-wrap: nowrap;
      text-decoration:none;
      color: whitesmoke;
+     margin: auto;
+     margin-top: 10px;
+     text-indent: 8px;
+     min-height: 150px;
+     width: 320px;
 
      .footer-title
     {
@@ -33,16 +35,40 @@
         margin: 10px;
         a 
         {
-            width: 420px;
+            width: 100%;
             text-align: center;
             font: normal normal 16px/ 22px "Roboto" Tahoma;
             text-decoration: none;
             color: whitesmoke;
+            line-height: 20px;
         }
     }
 }
 
 /*** MEDIA QUERIES***/
+@media screen and (min-width: 320px){
+    footer
+    {
+     min-height: 150px;
+     width: 320px;
+    }
+}
+
+@media screen and (min-width: 375px){
+    footer
+    {
+     width: 375px;
+    }
+}
+
+@media screen and (min-width: 420px){
+    footer
+    {
+     width: 420px;
+    }
+}
+
+
 @media screen and (min-width: 668px) {
 
   footer{

@@ -3,7 +3,7 @@
 main
 {
     background-color: whitesmoke;
-    max-width: 350px;
+    width: 320px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -100,32 +100,31 @@ main
 
 #menus {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
-    max-width: 350px;    
-    .top_banniere .img{
-      width:100%;
+    width: 320px;    
+    .top_banniere img{
+      width:320px;
       }
 }
 
 
 
-#menus .menu-container{
-  display: flex;
-  flex-direction: column;
-  
-  .menu-title{
+#menus .menu-container .menu-title{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 12px;
     height: 70px;
+    
     h3{    
-    font: normal normal 22px/ 33px "Shrikhand", tahoma;  
+    font: normal normal 28px/ 42px "Shrikhand", tahoma;  
     }    
   }
-  h4
-  { display: flex;
+
+.menu-container h4 { 
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
@@ -139,33 +138,30 @@ main
     padding-top: 2px;
     }
   }
-    .card-container{
-      display: flex;
-      flex-direction:column;
-      justify-content: center;
-      align-items:center;
-    }
-}
+
 #menus .menu-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-top: 25px;
   position: relative;
   top: -45px;
   border:none;
-  border-radius: 35px;  
-  width:350px;
+  border-radius: 40px;  
+  width:320px;
   background-color: whitesmoke;
   color: black;
   text-decoration: none;
-  
-
+  .card-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
   h5{
     font-weight: bold;
     text-overflow: ellipsis;
   }
   p{
-
     text-overflow: ellipsis;
   }
   .button{
@@ -174,6 +170,7 @@ main
     align-items:center;
       }
   }
+}
   
 #menus .card
     {
@@ -181,9 +178,9 @@ main
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px;
   border: none;
-  box-shadow: 0px 5px 20px rgb(184, 183, 183);
+  box-shadow: 0px 5px 5px 0px rgb(184, 183, 183);
   border-radius: 20px;
   height: 70px;
   width:100%;
@@ -197,7 +194,8 @@ main
     align-items: left;
     text-align: left;
     padding-left: 8px; 
-    width: 70%;
+    width: 60%;
+    font-size: 14px;
     white-space:nowrap;
     
     }
@@ -207,15 +205,17 @@ main
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    height: 70px;
-    width: 30%;
+    height: 100%;
+    width: 40%;
          
     p {  
       display:flex;
-      align-items:center;
+      flex-direction:column;
+      justify-content:end;
       font-weight: bold;
       height: 100%;
       padding-right: 20px;
+      padding-bottom: 14px;
     
       }
 
@@ -270,4 +270,96 @@ main
             }
 }
 
+ /*** MEDIA QUERIES*** taille d'écran max 420px***/ 
+
+ @media screen and(min-width: 375px){
+  
+  
+  main
+      {
+    width: 375px;
+    margin: auto;
+      }
+  #menus {
+    
+    width: 375px;
+    .top_banniere img{
+     width:375px;
+          }             
+      }
+  #menus .menu-container { 
+    width: 375px;
+  }
+
+  #menus .card
+    {
+  margin: 10px 5px 10px 5px;
+  width:100%;
+    
+      .menu-text {  
+    padding-left: 8px; 
+    width: 60%;    
+    font-size:16px;
+    }
+      .container
+    {
+    width: 40%;
+         
+        p {  
+        padding-bottom:12px;
+          }
+        .check {       
+        width: 45%;
+        border-radius: 0px 20px 20px 0px;        
+          }
+    }
+  } 
+
+}
+
+ @media screen and(min-width: 420px){
+  
+  
+  main
+      {
+    width: 420px;
+    margin: auto;
+      }
+  #menus {    
+    width: 420px;
+    .top_banniere img{
+      width:420px;
+           }      
+        }
+  #menus .menu-container{
+    width:420px;
+  }
+  #menus .card
+  {
+margin: 20px;
+width: 95%;
+  
+    .menu-text {  
+  padding-left: 12px; 
+  width: 70%;    
+  font-size:18px;
+  }
+    .container
+  {
+  width: 30%;
+  padding-left: 0px; 
+  display: flex;
+  justify-content: space-between;  
+      p {  
+      padding-bottom:12px;      
+        }
+      .check {      
+      width: 50%;
+      border-radius: 0px 20px 20px 0px;        
+        }
+  }
+} 
+
+
+}
 
