@@ -432,7 +432,7 @@ main {
   height: 70px;
 }
 #menus .menu-container .menu-title h3 {
-  font: normal normal 28px/42px "Shrikhand", tahoma;
+  font: normal normal 22px/33px "Shrikhand", tahoma;
 }
 
 .menu-container h4 {
@@ -481,7 +481,10 @@ main {
 #menus .menu-container .card-container .button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 50px;
+  width: 200px;
 }
 
 #menus .card {
@@ -540,13 +543,13 @@ main {
 
 .card:hover h5 {
   text-overflow: ellipsis;
-  display: block;
+  display: inline-block;
   overflow: hidden;
 }
 .card:hover p {
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: block;
+  display: inline-block;
   overflow: hidden;
 }
 
@@ -581,6 +584,9 @@ main {
 
   #menus .menu-container {
     width: 375px;
+  }
+  #menus .menu-container h3 {
+    font: normal normal 28px/42px "Shrikhand", tahoma;
   }
 
   #menus .card {

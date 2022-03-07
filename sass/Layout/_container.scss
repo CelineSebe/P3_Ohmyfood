@@ -119,7 +119,7 @@ main
     height: 70px;
     
     h3{    
-    font: normal normal 28px/ 42px "Shrikhand", tahoma;  
+    font: normal normal 22px/ 33px "Shrikhand", tahoma;  
     }    
   }
 
@@ -166,8 +166,11 @@ main
   }
   .button{
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
+    justify-content: center;
     align-items:center;
+    height: 50px;
+    width: 200px;
       }
   }
 }
@@ -237,13 +240,13 @@ main
 .card{
   &:hover h5 {
     text-overflow: ellipsis;
-    display: block;
+    display: inline-block;
     overflow: hidden
         }
        &:hover p {
     white-space: nowrap;
     text-overflow: ellipsis;
-    display: block;
+    display: inline-block;
     overflow: hidden
         }
 }    
@@ -289,6 +292,9 @@ main
       }
   #menus .menu-container { 
     width: 375px;
+    h3{    
+      font: normal normal 28px/ 42px "Shrikhand", tahoma;  
+      }    
   }
 
   #menus .card
