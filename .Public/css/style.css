@@ -209,7 +209,7 @@ section #search-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 320px;
+  width: 320px;
 }
 
 #search {
@@ -246,11 +246,12 @@ section #search-restaurant {
 }
 
 #functioning {
-  max-width: 320px;
+  width: 320px;
   margin: auto;
-  padding: 15px;
+  padding: 5px;
 }
 #functioning h3 {
+  padding-left: 10px;
   text-align: left;
 }
 #functioning ul {
@@ -293,9 +294,30 @@ section #search-restaurant {
 }
 
 /*** MEDIA QUERIES*** Petites tailles d'écran max 375px***/
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 375px) {
   section #search-section {
-    max-width: 420px;
+    width: 375px;
+  }
+
+  #functioning {
+    width: 375px;
+    margin: auto;
+  }
+  #functioning h3 {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 420px) {
+  section #search-section {
+    width: 420px;
+  }
+
+  #functioning {
+    width: 420px;
+    margin: auto;
+  }
+  #functioning h3 {
+    padding-left: 0px;
   }
 }
 /***MAIN***/
@@ -605,7 +627,7 @@ main {
   #menus .card .menu-text {
     padding-left: 12px;
     width: 70%;
-    font-size: 18px;
+    font-size: 16px;
   }
   #menus .card .container {
     width: 30%;
@@ -638,6 +660,7 @@ footer {
 }
 footer .footer-title {
   font: oblique normal 18px/24px "Shrikhand";
+  padding-bottom: 10px;
   text-indent: 8px;
 }
 footer .footer-nav {
@@ -675,7 +698,7 @@ footer .footer-nav a {
 }
 @media screen and (min-width: 420px) {
   footer {
-    width: 420px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 668px) {

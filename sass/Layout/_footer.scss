@@ -19,6 +19,7 @@
      .footer-title
     {
         font: oblique normal 18px/ 24px "Shrikhand";
+        padding-bottom: 10px;
         text-indent: 8px;
     }
     .footer-nav
@@ -64,7 +65,7 @@
 @media screen and (min-width: 420px){
     footer
     {
-     width: 420px;
+     width: 100%;
     }
 }
 
