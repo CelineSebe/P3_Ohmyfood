@@ -541,31 +541,49 @@ main {
   border-radius: 0px 20px 20px 0px;
 }
 
-.card:active h5 {
+.card:hover h5, .card:active h5 {
   text-overflow: ellipsis;
   display: inline-block;
   overflow: hidden;
 }
-.card:active p {
+.card:hover p, .card:active p {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-block;
   overflow: hidden;
 }
 
-.card:active > .container {
+.card:hover > .container, .card:active > .container {
   transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
-.card:active > .container i {
+.card:hover > .container i, .card:active > .container i {
   transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 .card .container {
   transform: translateX(70px);
+  -webkit-transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  -o-transform: translateX(70px);
   transition: transform 500ms ease-in-out;
+  -webkit-transition: transform 500ms ease-in-out;
+  -moz-transition: transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
 }
 .card .container i {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
   transition: transform 500ms ease-in-out;
+  -webkit-transition: transform 500ms ease-in-out;
+  -moz-transition: transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
 }
 
 /*** MEDIA QUERIES*** taille d'écran max 420px***/

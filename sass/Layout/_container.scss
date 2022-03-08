@@ -238,12 +238,12 @@ main
 } 
 
 .card{
-  &:active h5 {
+  &:hover h5, &:active h5 {
     text-overflow: ellipsis;
     display: inline-block;
     overflow: hidden
         }
-       &:active p {
+        &:hover p, &:active p {
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inline-block;
@@ -253,24 +253,40 @@ main
 
   .card
   {
-    &:active > .container{
-          transform: translateX(0px);
-        
+    &:hover > .container, &:active > .container{
+            transform: translateX(0px);
+          -webkit-transform: translateX(0px);
+          -moz-transform: translateX(0px);
+          -o-transform: translateX(0px);
               i{
                 transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
                 }
         }
   
   
   .container{
-   transform: translateX(70px);
+    transform: translateX(70px);
+    -webkit-transform: translateX(70px);
+    -moz-transform: translateX(70px);
+    -o-transform: translateX(70px);
    transition: transform 500ms ease-in-out;
- 
+   -webkit-transition: transform 500ms ease-in-out;
+   -moz-transition: transform 500ms ease-in-out;
+   -o-transition: transform 500ms ease-in-out;
       i{ 
      transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+     -o-transform: rotate(360deg);
      transition: transform 500ms ease-in-out;
+     -webkit-transition: transform 500ms ease-in-out;
+    -moz-transition: transform 500ms ease-in-out;
+    -o-transition: transform 500ms ease-in-out;
       }
-            }
+  }
 }
 
  /*** MEDIA QUERIES*** taille d'écran max 420px***/ 
