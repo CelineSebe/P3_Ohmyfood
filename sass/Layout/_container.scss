@@ -170,7 +170,6 @@ main
     justify-content: center;
     align-items:center;
     height: 50px;
-    width: 200px;
       }
   }
 }
@@ -231,6 +230,7 @@ main
     font-size: x-large;
     height: 100%;
     width: 50%;
+    overflow:hidden;
     border-radius: 0px 20px 20px 0px;
     
     }
@@ -238,12 +238,12 @@ main
 } 
 
 .card{
-  &:hover h5 {
+  &:active h5 {
     text-overflow: ellipsis;
     display: inline-block;
     overflow: hidden
         }
-       &:hover p {
+       &:active p {
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inline-block;
@@ -253,7 +253,7 @@ main
 
   .card
   {
-    &:hover > .container{
+    &:active > .container{
           transform: translateX(0px);
         
               i{
