@@ -507,17 +507,17 @@ main {
   align-items: left;
   text-align: left;
   padding-left: 8px;
-  width: 60%;
+  width: 65%;
   font-size: 14px;
   white-space: nowrap;
 }
 #menus .card .container {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 40%;
+  width: 35%;
 }
 #menus .card .container p {
   display: flex;
@@ -525,8 +525,7 @@ main {
   justify-content: end;
   font-weight: bold;
   height: 100%;
-  padding-right: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 #menus .card .container .check {
   display: flex;
@@ -609,7 +608,6 @@ main {
 
   #menus .card {
     margin: 10px 5px 10px 5px;
-    width: 100%;
   }
   #menus .card .menu-text {
     padding-left: 8px;
@@ -656,8 +654,6 @@ main {
   #menus .card .container {
     width: 30%;
     padding-left: 0px;
-    display: flex;
-    justify-content: space-between;
   }
   #menus .card .container p {
     padding-bottom: 12px;

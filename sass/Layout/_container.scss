@@ -196,7 +196,7 @@ main
     align-items: left;
     text-align: left;
     padding-left: 8px; 
-    width: 60%;
+    width: 65%;
     font-size: 14px;
     white-space:nowrap;
     
@@ -205,10 +205,10 @@ main
     {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;    
     height: 100%;
-    width: 40%;
+    width: 35%;
          
     p {  
       display:flex;
@@ -216,8 +216,7 @@ main
       justify-content:end;
       font-weight: bold;
       height: 100%;
-      padding-right: 20px;
-      padding-bottom: 14px;
+      padding-bottom: 12px;
     
       }
 
@@ -316,7 +315,6 @@ main
   #menus .card
     {
   margin: 10px 5px 10px 5px;
-  width:100%;
     
       .menu-text {  
     padding-left: 8px; 
@@ -369,9 +367,7 @@ width: 95%;
     .container
   {
   width: 30%;
-  padding-left: 0px; 
-  display: flex;
-  justify-content: space-between;  
+  padding-left: 0px;  
       p {  
       padding-bottom:12px;      
         }
