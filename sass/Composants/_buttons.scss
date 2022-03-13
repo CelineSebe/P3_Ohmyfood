@@ -13,7 +13,18 @@
     box-shadow: 0 5px 15px rgb(150, 147, 147);
     height: 50px;
     width: 260px; 
-    &__button--new 
+    
+    
+    &:hover
+        {
+            transform: scale(1.02);
+            transition: 0,2s;
+            cursor: pointer;
+        }
+        
+ }
+
+ .button--new 
         {
             display: grid;
             font-weight: bold;
@@ -25,18 +36,12 @@
             width: 80px;
             height: 30px;
             background: #99E2D0;
-            color: #1b6150;
-            border-radius: 5px;  
+            color: #539784;
+            border-radius: 2px;  
+            font-size: 14px;
+            padding: 5px;
+               
         }
-    
-    &:hover
-        {
-            transform: scale(1.02);
-            transition: 0,2s;
-            cursor: pointer;
-        }
-        
- }
  
 
  

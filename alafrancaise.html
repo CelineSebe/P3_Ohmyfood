@@ -3,11 +3,11 @@
         <head>
             <title> Oh my food</title>
             <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial scale=1.0"/>
-            <link  rel= "stylesheet" href= "./css/style.css">
+            <meta name="viewport" content="width=device-width, initial scale=1.0"/>            
             <script src="https://kit.fontawesome.com/bc4fad6d34.js" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+            <link  rel= "stylesheet" href= "./.Public/css/style.css">
         </head>
 
         <body>
@@ -16,8 +16,8 @@
                 <div id="top-logo">  
                     <a href= "index.html" class="button-return">
                         <i class= "fas fa-arrow-left"></i>
-                    </a>      
-                    <img src="images/logo/ohmyfood_small.png" alt="logo de Ohmyfood">                    
+                    </a>   
+                    <img src="./images/logo/ohmyfood_small.png" alt="logo de Ohmyfood">
                 </div>
             </header>
 
@@ -37,124 +37,152 @@
                             <i class="far fa-heart" aria-hidden="true"></i>
                         </div>
                         <h4><span>ENTR</span>&Eacute;ES</h4>
-                        <div class="card-container">   
-                        <div class="card">
-                            <div class="menu-text">
-                                <h5> Tartare de poulpe acidulé </h5>
-                                <p> Aux zests d'orange </p>                                    
+                        <form autocomplete="off">                            
+                            <fieldset>        
+                                <div class="card">      
+                                <input type="checkbox" name="entree" id="tartare">                                 
+                                <label for="tartare">                                     
+                                    <span class="menu-text">                                 
+                                        <h5> Tartare de poulpe acidulé </h5>
+                                        <p> Aux zests d'orange </p>                                    
+                                    </span>
+                                    <span class="container"> 
+                                        <p>25&euro;</p>                                    
+                                        <span class="check">
+                                            <i class="fas fa-check-circle"></i>                                                
+                                        </span>                                                                           
+                                    </span>
+                                </label>
                             </div>
-                            <div class="container"> 
-                                <p>25&euro;</p>                                    
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>                                                                           
+                            <div class="card">
+                                <input type="checkbox" name="entree" id="veloute">                               
+                                <label for="veloute"> 
+                                 
+                                    <span class="menu-text">                                   
+                                        <h5> Velouté de légumes d'antan </h5>
+                                        <p> Carotte, panais, topinambour </p>
+                                    </span>       
+                                    <span class="container"> 
+                                        <p>35&euro;</p>                                   
+                                        <span class="check">                                    
+                                            <i class="fas fa-check-circle"></i>                                                                                 
+                                        </span>
+                                    </span>                                                                      
+                                </label>
                             </div>
+                            <div class="card">                         
+                                <input type="checkbox" name="entree" id="soupe"> 
+                                <label for="soupe"> 
+                                
+                                    <span class="menu-text">                              
+                                        <h5> Soupe à l'oignon </h5>
+                                        <p> Revisitée </p>
+                                    </span>                                   
+                                    <span class="container"> 
+                                        <p>20&euro;</p>                                   
+                                        <span class="check">                                        
+                                            <i class="fas fa-check-circle"></i>                                                 
+                                        </span>
+                                    </span>                                 
+                                </label>
+                            </div>
+                            </fieldset>
+
+                            <h4> <span>PLAT</span>S </h4>
+                            <fieldset>
+                                <div class="card">
+                                <input type="checkbox" name="plats" id="coquille">
+                                <label for="coquille">                                    
+                                    <div class="menu-text">
+                                        <h5> Coquille Saint-Jacques </h5>
+                                        <p> Accompagnées d'une purée de panais  </p>
+                                    </div>
+                                    <div class="container">
+                                        <p>40&euro;</p>
+                                        <span class="check">                                    
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>                             
+                                </label> 
+                            </div>
+                                <input type="checkbox" name="plats" id="magret">
+                                <label for="magret">                               
+                                    <div class="menu-text">                          
+                                        <h5> Magret de canard </h5>
+                                        <p> Et parmentier de pommes de terres </p>
+                                    </div>                                                                                        
+                                    <div class="container">
+                                        <p>35&euro;</p>
+                                        <span class="check">                                    
+                                            <i class="fas fa-check-circle"></i>
+                                        </span>
+                                    </div>                                   
+                                </label>
+
+                                <input type="checkbox" neme="plats" id="pigeonneau">
+                                <label for="pigeonneau">                                   
+                                        <div class="menu-text">
+                                            <h5>Pigeonneau d'Ille-et Vilaine </h5>
+                                            <p> Sur son lit de gnocchis aux légumes </p>                                
+                                        </div>                                
+                                        <div class="container">
+                                            <p>44&euro;</p>
+                                            <span class="check">                                    
+                                            <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </div>
+                                    
+                                </label>                                
+                                </fieldset>
+                                <h4> <span>DESS</span>ERTS </h4>
+                                <fieldset> 
+                                    <input type="checkbox" name="desserts" id="petales">
+                                    <label for="petales">
+                                        
+                                            <div class= "menu-text">
+                                                <h5> Pétales de violettes glacés </h5>                            
+                                                <p> Et purée de noisettes </p>                                
+                                            </div>
+                                            <div class="container">
+                                                <p>18&euro;</p>
+                                                <span class="check">                                    
+                                                    <i class="fas fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                       
+                                    </label>
+                                    <input type="checkbox" name="plats" id="fondant">
+                                    <label for="fondant">
+                                        
+                                            <div class= "menu-text">
+                                                <h5> Fondant au chocolat </h5>
+                                                <p> Revisité </p>                                
+                                            </div>
+                                            <div class="container">
+                                                <p>22&euro;</p>
+                                                <span class="check">                                    
+                                                    <i class="fas fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                        
+                                    </label>
+                                    <input type="checkbox" name="plats" id="millefeuille">
+                                    <label for="millefeuille">                               
+                                        <div class= "menu-text">
+                                                <h5> Millefeuille croustillant </h5>
+                                                <p> Myrtilles et pâte d'amande </p>                   
+                                        </div>
+                                        <div class="container">
+                                            <p>23&euro; </p>
+                                                <span class="check">                                    
+                                                    <i class="fas fa-check-circle"></i>
+                                                </span>
+                                        </div>                                        
+                                    </label>
+                                    </fieldset>                                                                                        
+                                    <input type=submit value="Commander" class="button">                                
+                            </form>                
                         </div>
-                        <div class="card">  
-                            <div class="menu-text">
-                                <h5> Velouté de légumes d'antan </h5>
-                                <p> Carotte, panais, topinambour </p>       
-                            </div>
-                            <div class="container"> 
-                                <p>35&euro;</p>                                   
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>                                     
-                                </span>
-                            </div>
-                        </div>                    
-                        <div class="card">
-                            <div class="menu-text">
-                                <h5> Soupe à l'oignon </h5>
-                                <p> Revisitée </p>
-                            </div>
-                            <div class="container"> 
-                                <p>20&euro;</p>                                   
-                                <span class="check">                                        
-                                    <i class="fas fa-check-circle"></i>    
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <h4> <span>PLAT</span>S </h4>
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="menu-text">
-                                <h5> Coquille Saint-Jacques </h5>
-                                <p> Accompagnées d'une purée de panais  </p>
-                            </div>
-                            <div class="container">
-                                <p>40&euro;</p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="menu-text">                          
-                                <h5> Magret de canard </h5>
-                                <p> Et parmentier de pommes de terres </p>
-                            </div>                                                                                        
-                            <div class="container">
-                                <p>35&euro;</p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="menu-text">
-                                <h5>Pigeonneau d'Ille-et Vilaine </h5>
-                                <p> Sur son lit de gnocchis aux légumes </p>                                
-                            </div>                                
-                            <div class="container">
-                                <p>44&euro;</p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <h4> <span>DESS</span>ERTS </h4>
-                    <div class="card-container">
-                        <div class="card">
-                            <div class= "menu-text">
-                                <h5> Pétales de violettes glacés </h5>                            
-                                <p> Et purée de noisettes </p>                                
-                            </div>
-                            <div class="container">
-                                <p>18&euro;</p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class= "menu-text">
-                                <h5> Fondant au chocolat </h5>
-                                <p> Revisité </p>                                
-                            </div>
-                            <div class="container">
-                                <p>22&euro;</p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class= "menu-text">
-                                <h5> Millefeuille croustillant </h5>
-                                <p> Myrtilles et pâte d'amande </p>                   
-                            </div>
-                            <div class="container">
-                                <p>23&euro; </p>
-                                <span class="check">                                    
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>                    
-                        <input type=submit value="Commander" class="button">
-                    </div>
-                    </div>
                 </section>
             </main>
             <footer>

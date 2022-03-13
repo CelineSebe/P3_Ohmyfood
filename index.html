@@ -3,130 +3,130 @@
         <head>
             <title> Oh my food</title>
             <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial scale=1.0"/>
-            <link  rel= "stylesheet" href= "./css/style.css">
+            <meta name="viewport" content="width=device-width, initial scale=1.0"/>            
             <script src="https://kit.fontawesome.com/bc4fad6d34.js" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+            <link  rel= "stylesheet" href= "./.Public/css/style.css">
         </head>
 
         <body>
             <!--Bloc header Logo, search, navbar-->
             <header>
                 <div id="top-logo">
-                    <img src="images/logo/ohmyfood_small.png" alt="logo de Ohmyfood">  
+                    <img src="./images/logo/ohmyfood_small.png" alt="logo de Ohmyfood">
                 </div>
             </header>
-            <section id="search-section">
-                <div id="search">
-                    <form method="post" action="traitement.php">
-                        <label for="localisation"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                        <input type="text" name="localisation" id="localisation" placeholder="Paris, Belleville">
-                    </form>
-                </div>
-                <div id="search-restaurant"> 
-                    <h1> Réservez le menu qui <br> vous convient </h1>
-                    <h2> Découvrez des restaurants d'exception,<br> selectionnés par nos soins.</h2>
-                    <a href="#restaurants">
-                        <button class="button">
-                        Explorer nos restaurants
-                        </button>
-                    </a>
-                </div>                
-                <div id="functioning">
-                    <h3> Fonctionnement </h3>                    
-                    <ul><li class="card-functioning"><span class="serial-number"> 1 </span><i class="fa fa-tablet" aria-hidden="true"> Choisissez un restaurant</i>
-                    </li></ul>                        
-                    <ul><li class="card-functioning"><span class="serial-number"> 2 </span><i class="fa fa-list" aria-hidden="true"> Composez votre menu</i>
-                    </li></ul> 
-                    <ul><li class="card-functioning"><span class="serial-number"> 3 </span><i class="fa fa-store" aria-hidden="true"> Dégustez au restaurant</i>
-                    </li></ul>                                                
-                </div>
-            </section>
 
-
-            <!-- Contenu principal avec section, restaurants, menus et réservations-->
+            <!-- Contenu principal avec section-->
             <main>
                 <!-- Section de localisation et recherche des restaurants-->
+                <section id="search-section">
+                    <div id="search">
+                        <form class="localisation">
+                            <label for="localisation">Remplir ici la localisation des restaurants</label>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <input type="text" name="localisation" id="localisation" placeholder="Paris, Belleville">          
+                        </form>
+                    </div>
+                    <div id="search-restaurant"> 
+                        <h1> Réservez le menu qui vous convient </h1>
+                        <h2> Découvrez des restaurants d'exception,<br> selectionnés par nos soins.</h2>
+                        <form class="localisation">
+                            <button class="button">
+                                Explorer nos restaurants
+                            </button>    
+                        </form>                    
+                    </div>                               
+                    <div id="functioning">
+                        <h3> Fonctionnement </h3>                    
+                        <ul><li class="card-functioning"><span class="serial-number"> 1 </span><i class="fa fa-tablet" aria-hidden="true"> Choisissez un restaurant</i>
+                            </li>                       
+                            <li class="card-functioning"><span class="serial-number"> 2 </span><i class="fa fa-list" aria-hidden="true"> Composez votre menu</i>
+                            </li> 
+                            <li class="card-functioning"><span class="serial-number"> 3 </span><i class="fa fa-store" aria-hidden="true"> Dégustez au restaurant</i>
+                            </li>
+                        </ul>                                                
+                    </div>
+                </section>
 
+                <!--Section présentation des restaurants-->
+                
                 <section id="restaurants">
                     <h3>Restaurants</h3>
                     <div class="card-container">
-                        <div class= "card">
+                        <article class= "card">                            
                             <a href="lapalettedugout.html" target="blank">
-                                <figure class="card-header">
-                                    <img src="images/restaurants/xsmall/jay-wennington-N_Y88TWmGwA-xsmall.jpg" alt="la palette du goût">
-                                    <button class="button__button--new">
+                                <figure class="card-header">                                
+                                    <img src="images/restaurants/xsmall/jay-wennington-N_Y88TWmGwA-xsmall.jpg" alt="la palette du goût">                                
+                                    <span class="button--new">
                                         Nouveau
-                                    </button>
+                                    </span>                                
+                                    <figcaption class="card-body">
+                                        <div class="card-body__text">
+                                            <h4> La palette du goût </h4>
+                                            <p> Menilmontant</p>
+                                        </div>
+                                        <i class="far fa-heart" aria-hidden="true"></i>  
+                                    </figcaption>
                                 </figure>
-                                <figcaption class="card-body">
-                                    <div class="card-body__text">
-                                        <h4> La palette du goût </h3>
-                                        <p> Menilmontant</p>
-                                    </div>
-                                    <i class="far fa-heart" aria-hidden="true"></i>  
-                                </figcaption>
-                            </a>                            
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <a href="lanoteenchantee.html" target="blank">
-                                <figure class="card-header">  
-                                    <img src="images/restaurants/xsmall/stil-u2Lp8tXIcjw-xsmall.jpg"alt="la note enchantée">
-                                    <button class="button__button--new">
-                                        Nouveau
-                                    </button>
+                            </a>                                                        
+                        </article>                
+                    
+                        <article class="card">          
+                            <a href="lanoteenchantee.html" target="blank">                  
+                                <figure class="card-header">                                
+                                    <img src="images/restaurants/xsmall/stil-u2Lp8tXIcjw-xsmall.jpg" alt="la note enchantée">                                
+                                    <span class="button--new">
+                                    Nouveau
+                                    </span>                                
+                                    <figcaption class="card-body">
+                                        <div class="card-body__text">
+                                            <h4> La note enchantée </h4>
+                                            <p> Charonne </p>
+                                        </div>
+                                        <i class="far fa-heart" aria-hidden="true"></i>
+                                    </figcaption>
                                 </figure>
-                                <figcaption class="card-body">
-                                    <div class="card-body__text">
-                                        <h4> La note enchantée </h4>
-                                        <p> Charonne </p>
-                                    </div>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
-                                </figcaption>  
-                            </a>                     
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <div class="card">                            
-                            <a href="alafrancaise.html" target="blank">
-                                <figure>
-                                    <img src="images/restaurants/xsmall/toa-heftiba-DQKerTsQwi0-xsmall.jpg" alt=" A la française">
-                                </figure>                            
-                                <figcaption class="card-body">
-                                    <div class="card-body__text">
-                                        <h4> A la française </h4>
-                                        <p> Cité rouge </p>
-                                    </div>
-                                    <i class="far fa-heart" aria-hidden="true"></i>                                       
-                                </figcaption> 
+                            </a>                                                
+                        </article>
+                    
+                        <article class="card">
+                            <a href="alafrancaise.html" target="blank">                 
+                                <figure>                                
+                                    <img src="images/restaurants/xsmall/toa-heftiba-DQKerTsQwi0-xsmall.jpg" alt=" A la française">                                                           
+                                    <figcaption class="card-body">
+                                        <div class="card-body__text">
+                                            <h4> A la française </h4>
+                                            <p> Cité rouge </p>
+                                        </div>
+                                        <i class="far fa-heart" aria-hidden="true"></i>                                       
+                                    </figcaption>
+                                </figure>  
                             </a>                        
-                        </div>      
-                    </div>
-                    <div class="card-container">
-                        <div class="card">                            
+                        </article>      
+
+                        <article class="card">                            
                             <a href="ledelicedessens.html" target="blank">
                                 <figure>   
-                                    <img src="images/restaurants/xsmall/louis-hansel-shotsoflouis-qNBGVyOCY8Q-xsmall.jpg" alt="Le délice des sens">
-                                </figure>                             
-                                <figcaption class="card-body">
-                                    <div class="card-body__text">
-                                        <h4> Le délice des sens </h4>
-                                        <p> Folie-Mericourt </p>
-                                    </div>
-                                    <i class="far fa-heart" aria-hidden="true"></i>                                           
-                                </figcaption>
+                                    <img src="images/restaurants/xsmall/louis-hansel-shotsoflouis-qNBGVyOCY8Q-xsmall.jpg" alt="Le délice des sens">                                                            
+                                    <figcaption class="card-body">
+                                        <div class="card-body__text">
+                                            <h4> Le délice des sens </h4>
+                                            <p> Folie-Mericourt </p>
+                                        </div>
+                                        <i class="far fa-heart" aria-hidden="true"></i>                                           
+                                    </figcaption>
+                                </figure> 
                             </a>                 
-                        </div>
+                        </article>
                     </div>
                 </section>
             </main>
         
             <footer>
                 <nav class="footer-nav">
-                    <h6 class="footer-title"> ohmyfood </h6><br>
+                    <h6 class="footer-title"> ohmyfood </h6>
                         <ul>
                             <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Proposer un restaurant</a></li>
                             <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> Devenir partenaire </a></li>

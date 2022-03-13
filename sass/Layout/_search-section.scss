@@ -1,10 +1,18 @@
-section #search-section
+/***MAIN***/
+
+main
+{   width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search-section
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
+  padding: 0px;
+  width: 100%;
 }
 
 #search
@@ -13,10 +21,11 @@ section #search-section
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    box-shadow: 0px 10px 13px 7px #000000;
     background-color: rgb(226, 221, 221);
-    box-shadow: 0px 10px 13px 7px #000000; 
     padding: 8px;
     width: 100%;
+    
      #localisation
         {
         display:inline-block;
@@ -25,7 +34,12 @@ section #search-section
         background-color:  rgb(226, 221, 221);
         border: none;
         text-align: center;
+        font-weight: bold;
         }
+      label{
+        position:absolute;
+        left: -999px;
+      }
     }
   
 section #search-restaurant
@@ -45,9 +59,12 @@ section #search-restaurant
 
 #functioning 
 {  
-  width:320px;
-  margin:auto;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  margin:10px auto;
+  padding: 20px;
   h3{
     padding-left:10px;
     text-align:left;   
@@ -56,13 +73,18 @@ section #search-restaurant
     display: flex;
     flex-direction: column;
     align-items:center;
+    
+  }
+  li{
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 #functioning .card-functioning
     {      
       display: flex;
-      display:column;
+      justify-content: space-between;
       align-items: center;
       position: relative;
       justify-content: space-around;
@@ -98,35 +120,30 @@ section #search-restaurant
 
    /*** MEDIA QUERIES*** Petites tailles d'écran max 375px***/ 
  
-@media screen and(min-width: 375px){
-  
-    section #search-section
-      {
-    width: 375px;
-      }
-    
-    #functioning 
-      {  
-        width:375px;
-        margin:auto;
-        h3{
-          padding-left:10px;
-        }
-      }
-    }
+@media screen and(min-width: 768px){
 
-@media screen and(min-width: 420px){
-  
-  section #search-section
-    {
-    width: 420px;
-    }
   #functioning 
   {  
-      width:420px;
-      margin:auto;
-      h3{
-        padding-left:0px;
-      }
+    padding: 10px;
+    h3{
+      text-align:center; 
     }
+    ul{
+      margin:20px;
+    }
+}
+}
+@media screen and(min-width: 992px){
+      
+  #functioning{
+    
+    ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    }
+  }
+    
+  
 }

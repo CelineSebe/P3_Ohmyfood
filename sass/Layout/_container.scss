@@ -1,18 +1,7 @@
-/***MAIN***/
-
-main
-{
-    background-color: whitesmoke;
-    width: 320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 #restaurants
 {
+  background-color: whitesmoke;
   width: 100%;
   padding: 20px;
 }
@@ -23,7 +12,7 @@ main
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;  
+  flex-wrap: wrap;  
   width: 100%;
   background-color: whitesmoke;
   word-spacing: normal;
@@ -36,7 +25,7 @@ main
     border: none;
     box-shadow: 0px 5px 20px rgb(184, 183, 183);
     border-radius: 20px;
-    width: 100%;
+    width: 360px;
         
     &:hover {
     transform: scale(1.05);
@@ -103,13 +92,11 @@ main
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    width: 320px;    
+    width: 100%;    
     .top_banniere img{
       width:320px;
       }
 }
-
-
 
 #menus .menu-container .menu-title{
     display: flex;
@@ -120,7 +107,7 @@ main
     
     h3{    
     font: normal normal 22px/ 33px "Shrikhand", tahoma;  
-    }    
+    }   
   }
 
 .menu-container h4 { 
@@ -148,15 +135,16 @@ main
   top: -45px;
   border:none;
   border-radius: 40px;  
-  width:320px;
+  width:100%;
   background-color: whitesmoke;
   color: black;
   text-decoration: none;
-  .card-container{
+  fieldset{
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    margin: 0px;
   h5{
     font-weight: bold;
     text-overflow: ellipsis;
@@ -173,35 +161,40 @@ main
       }
   }
 }
+
+form fieldset{
+  border:none;
+  outline:none;
+} 
   
-#menus .card
+#menus .card label
     {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5px 0px 5px 0px;
+  margin: 5px;
   border: none;
   box-shadow: 0px 5px 5px 0px rgb(184, 183, 183);
   border-radius: 20px;
-  height: 70px;
-  width:100%;
+  height: 80px;
+  width: 100%;
   overflow:hidden;
   cursor: pointer;
-    
-      .menu-text {  
+   
+     .menu-text {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     text-align: left;
-    padding-left: 8px; 
+    padding-left: 4px; 
     width: 65%;
     font-size: 14px;
     white-space:nowrap;
     
     }
-      .container
+     .container
     {
     display: flex;
     flex-direction: row;
@@ -216,8 +209,8 @@ main
       justify-content:end;
       font-weight: bold;
       height: 100%;
+      padding-right: 5px;
       padding-bottom: 12px;
-    
       }
 
    .check {
@@ -227,50 +220,57 @@ main
     color: whitesmoke;
     background-color: $tertiary-color;
     font-size: x-large;
+    position:relative;
+    right: -70px;
     height: 100%;
     width: 50%;
-    overflow:hidden;
+    overflow:hidden;    
     border-radius: 0px 20px 20px 0px;
     
     }
   }
 } 
+    
 
-.card{
-  &:hover h5, &:active h5 {
-    text-overflow: ellipsis;
-    display: inline-block;
-    overflow: hidden
-        }
-        &:hover p, &:active p {
+    .menu-text{
+    
+     p {
+      text-overflow: ellipsis;
+      display: inline;
+      overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    display: inline-block;
-    overflow: hidden
         }
-}    
+      h5{
+        text-overflow: ellipsis;
+        display: inline;
+        overflow: hidden;
+      }
+    }
+   
 
-  .card
-  {
-    &:hover > .container, &:active > .container{
+  
+
+input:checked + label{
+     .container{
             transform: translateX(0px);
           -webkit-transform: translateX(0px);
           -moz-transform: translateX(0px);
           -o-transform: translateX(0px);
               i{
-                transform: rotate(0deg);
+            transform: rotate(0deg);
           -webkit-transform: rotate(0deg);
           -moz-transform: rotate(0deg);
           -o-transform: rotate(0deg);
                 }
         }
   
-  
-  .container{
-    transform: translateX(70px);
-    -webkit-transform: translateX(70px);
-    -moz-transform: translateX(70px);
-    -o-transform: translateX(70px);
+
+ .container{
+    
+    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
+    -moz-transform: translateX(-70px);
+    -o-transform: translateX(-70px);
    transition: transform 500ms ease-in-out;
    -webkit-transition: transform 500ms ease-in-out;
    -moz-transition: transform 500ms ease-in-out;
@@ -286,32 +286,72 @@ main
     -o-transition: transform 500ms ease-in-out;
       }
   }
+ }
+
+
+ #menus input{
+  position: absolute;
+  left: -9999px;
+}
+ input[type="checkbox"] +label {
+  display:none;
+}
+ input[type="checkbox"]:checked +label { 
+  display: block; 
 }
 
- /*** MEDIA QUERIES*** taille d'écran max 420px***/ 
 
- @media screen and(min-width: 375px){
+ /*** MEDIA QUERIES*** Pour tablettes_taille d'écran min 768px***/ 
+
+ @media screen and(min-width: 768px){
   
-  
-  main
-      {
-    width: 375px;
-    margin: auto;
-      }
-  #menus {
-    
-    width: 375px;
-    .top_banniere img{
-     width:375px;
-          }             
-      }
-  #menus .menu-container { 
-    width: 375px;
-    h3{    
-      font: normal normal 28px/ 42px "Shrikhand", tahoma;  
-      }    
+  #restaurants 
+  {   
+    display: flex;
+    flex-direction: column;    
+    width: 100%;
+    padding: 10px;
+    h3{
+      text-align:center;
+    }
+    .card-container{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;      
+    }
   }
+    #restaurants .card{ 
+      margin: 20px;
+      border: none;
+      box-shadow: 0px 5px 20px rgb(184, 183, 183);
+      border-radius: 20px;
+      width: 360px;
 
+  }
+ }
+ @media screen and(min-width: 992px){
+
+  #restaurants 
+  {   
+  
+    .card-container{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;      
+    }
+  }
+    #restaurants .card{ 
+      margin: 50px;
+      border: none;
+      box-shadow: 0px 5px 20px rgb(184, 183, 183);
+      border-radius: 20px;
+      width: 360px;
+
+  }
+ }
+
+/*
+@media screen and (min-width: 360px){
   #menus .card
     {
   margin: 10px 5px 10px 5px;
@@ -334,39 +374,33 @@ main
           }
     }
   } 
-
 }
 
  @media screen and(min-width: 420px){
   
   
-  main
-      {
-    width: 420px;
-    margin: auto;
-      }
   #menus {    
-    width: 420px;
+    min-width: 420px;
     .top_banniere img{
-      width:420px;
+      min-width:420px;
            }      
-        }
+        
   #menus .menu-container{
-    width:420px;
+    min-width:420px;
   }
   #menus .card
   {
 margin: 20px;
-width: 95%;
+min-width: 95%;
   
     .menu-text {  
   padding-left: 12px; 
-  width: 70%;    
+  min-width: 70%;    
   font-size:16px;
   }
     .container
   {
-  width: 30%;
+  min-width: 30%;
   padding-left: 0px;  
       p {  
       padding-bottom:12px;      
@@ -379,5 +413,18 @@ width: 95%;
 } 
 
 
-}
 
+@media screen and(min-width: 992px){
+  
+  
+    #restaurants .card{ 
+      margin-left: 50px;
+      margin-right: 50px;
+      border: none;
+      box-shadow: 0px 5px 20px rgb(184, 183, 183);
+      border-radius: 20px;
+      width: 360px;
+
+  }
+}
+*/
