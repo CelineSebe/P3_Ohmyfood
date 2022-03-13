@@ -13,73 +13,63 @@
     -webkit-transform: translateY(0);
   }
 }
-#menus .card-container .card:nth-child(1) {
-  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-  animation: open-card 1s 0ms backwards ease-in-out;
-}
-
-#menus .card-container .card:nth-child(2) {
-  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-  animation: open-card 1s 0ms backwards ease-in-out;
-}
-
-#menus .card-container .card:nth-child(3) {
+#menus fieldset .card:nth-child(1) {
   -webkit-animation: open-card 1s 50ms backwards ease-in-out;
+  -moz-animation: open-card 1s 50ms backwards ease-in-out;
   animation: open-card 1s 50ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(4) {
+#menus fieldset .card:nth-child(2) {
   -webkit-animation: open-card 1s 150ms backwards ease-in-out;
+  -moz-animation: open-card 1s 150ms backwards ease-in-out;
   animation: open-card 1s 150ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(5) {
+#menus fieldset .card:nth-child(3) {
   -webkit-animation: open-card 1s 250ms backwards ease-in-out;
+  -moz-animation: pen-card 1s 250ms backwards ease-in-out;
   animation: open-card 1s 250ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(6) {
+#menus fieldset .card:nth-child(4) {
   -webkit-animation: open-card 1s 350ms backwards ease-in-out;
+  -moz-animation: open-card 1s 350ms backwards ease-in-out;
   animation: open-card 1s 350ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(7) {
-  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-  animation: open-card 1s 0ms backwards ease-in-out;
-}
-
-#menus .card-container .card:nth-child(8) {
+#menus fieldset .card:nth-child(5) {
   -webkit-animation: open-card 1s 450ms backwards ease-in-out;
+  -moz-animation: open-card 1s 450ms backwards ease-in-out;
   animation: open-card 1s 450ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(9) {
+#menus fieldset .card:nth-child(6) {
   -webkit-animation: open-card 1s 550ms backwards ease-in-out;
+  -moz-animation: open-card 1s 550ms backwards ease-in-out;
   animation: open-card 1s 550ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(10) {
+#menus fieldset .card:nth-child(7) {
   -webkit-animation: open-card 1s 650ms backwards ease-in-out;
+  -moz-animation: open-card 1s 650ms backwards ease-in-out;
   animation: open-card 1s 650ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(11) {
-  -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-  animation: open-card 1s 0ms backwards ease-in-out;
-}
-
-#menus .card-container .card:nth-child(12) {
+#menus fieldset .card:nth-child(8) {
   -webkit-animation: open-card 1s 750ms backwards ease-in-out;
+  -moz-animation: open-card 1s 750ms backwards ease-in-out;
   animation: open-card 1s 750ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(13) {
+#menus .card-container .card:nth-child(9) {
   -webkit-animation: open-card 1s 850ms backwards ease-in-out;
+  -moz-animation: open-card 1s 850ms backwards ease-in-out;
   animation: open-card 1s 850ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(14) {
+#menus .card-container .card:nth-child(10) {
   -webkit-animation: open-card 1s 950ms backwards ease-in-out;
+  -moz-animation: open-card 1s 950ms backwards ease-in-out;
   animation: open-card 1s 950ms backwards ease-in-out;
 }
 
@@ -406,41 +396,12 @@ section #search-restaurant {
 #menus {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 #menus .top_banniere img {
-  width: 320px;
+  width: 100%;
+  object-fit: cover;
 }
-
-#menus .menu-container .menu-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 12px;
-  height: 70px;
-}
-#menus .menu-container .menu-title h3 {
-  font: normal normal 22px/33px "Shrikhand", tahoma;
-}
-
-.menu-container h4 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: left;
-  white-space: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 12px;
-}
-.menu-container h4 span {
-  border-bottom: solid 2px #99E2D0;
-  white-space: none;
-  padding-top: 2px;
-}
-
 #menus .menu-container {
   display: flex;
   flex-direction: column;
@@ -455,26 +416,40 @@ section #search-restaurant {
   color: black;
   text-decoration: none;
 }
-#menus .menu-container fieldset {
+
+#menus .menu-title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px;
+  height: 70px;
+  width: 100%;
 }
-#menus .menu-container fieldset h5 {
-  font-weight: bold;
-  text-overflow: ellipsis;
+#menus .menu-title h3 {
+  font: normal normal 22px/33px "Shrikhand", tahoma;
 }
-#menus .menu-container fieldset p {
-  text-overflow: ellipsis;
+
+#menus h4 {
+  white-space: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
 }
-#menus .menu-container fieldset .button {
+#menus h4 span {
+  border-bottom: solid 2px #99E2D0;
+  white-space: none;
+  padding-top: 2px;
+}
+#menus h4 .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50px;
+}
+#menus h4 fieldset {
+  display: flex;
+  flex-direction: column;
 }
 
 form fieldset {
@@ -482,17 +457,22 @@ form fieldset {
   outline: none;
 }
 
+#menus .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #menus .card label {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5px;
   border: none;
+  margin: 5px;
   box-shadow: 0px 5px 5px 0px #b8b7b7;
   border-radius: 20px;
-  height: 80px;
-  width: 100%;
+  height: 70px;
+  width: 80%;
   overflow: hidden;
   cursor: pointer;
 }
@@ -501,9 +481,8 @@ form fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  text-align: left;
-  padding-left: 4px;
-  width: 65%;
+  padding-left: 8px;
+  width: 80%;
   font-size: 14px;
   white-space: nowrap;
 }
@@ -512,16 +491,16 @@ form fieldset {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 35%;
+  height: 70px;
+  width: 20%;
 }
 #menus .card label .container p {
   display: flex;
   flex-direction: column;
   justify-content: end;
   font-weight: bold;
-  height: 100%;
-  padding-right: 5px;
+  height: 70px;
+  width: 30%;
   padding-bottom: 12px;
 }
 #menus .card label .container .check {
@@ -533,19 +512,20 @@ form fieldset {
   font-size: x-large;
   position: relative;
   right: -70px;
-  height: 100%;
-  width: 50%;
+  height: 70px;
+  width: 70%;
   overflow: hidden;
   border-radius: 0px 20px 20px 0px;
 }
 
-.menu-text p {
+#menus label .menu-text p {
   text-overflow: ellipsis;
   display: inline;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu-text h5 {
+#menus label .menu-text h5 {
+  font-weight: bold;
   text-overflow: ellipsis;
   display: inline;
   overflow: hidden;
@@ -597,7 +577,7 @@ input[type=checkbox]:checked + label {
   display: block;
 }
 
-/*** MEDIA QUERIES*** Pour tablettes_taille d'écran min 768px***/
+/*** MEDIA QUERIES*** Pour tablette_taille d'écran à partir de 768px***/
 @media screen and (min-width: 768px) {
   #restaurants {
     display: flex;
@@ -621,6 +601,11 @@ input[type=checkbox]:checked + label {
     border-radius: 20px;
     width: 360px;
   }
+
+  #menus .top_banniere img {
+    width: 768px;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width: 992px) {
   #restaurants .card-container {
@@ -636,8 +621,13 @@ input[type=checkbox]:checked + label {
     border-radius: 20px;
     width: 360px;
   }
+
+  #menus .top_banniere img {
+    width: 992px;
+    object-fit: cover;
+  }
 }
-/*
+/***
 @media screen and (min-width: 360px){
   #menus .card
     {
@@ -714,7 +704,7 @@ min-width: 95%;
 
   }
 }
-*/
+***/
 /***Section footer***/
 footer {
   display: flex;

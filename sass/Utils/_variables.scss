@@ -19,64 +19,60 @@ $tertiary-color: #99E2D0;
   }
   
   
-  #menus .card-container .card:nth-child(1) {
-    -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-    animation: open-card 1s 0ms backwards ease-in-out;
-  }
-  
-  #menus .card-container .card:nth-child(2) {
-    -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-    animation: open-card 1s 0ms backwards ease-in-out;
-  }
-  
-  #menus .card-container .card:nth-child(3) {
+  #menus fieldset .card:nth-child(1) {
     -webkit-animation: open-card 1s 50ms backwards ease-in-out;
+    -moz-animation: open-card 1s 50ms backwards ease-in-out;
     animation: open-card 1s 50ms backwards ease-in-out;
   }
   
-  #menus .card-container .card:nth-child(4) {
+  #menus fieldset .card:nth-child(2) {
     -webkit-animation: open-card 1s 150ms backwards ease-in-out;
+    -moz-animation: open-card 1s 150ms backwards ease-in-out;
     animation: open-card 1s 150ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(5) {
+  
+  #menus fieldset .card:nth-child(3) {
     -webkit-animation: open-card 1s 250ms backwards ease-in-out;
+    -moz-animation: pen-card 1s 250ms backwards ease-in-out;
     animation: open-card 1s 250ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(6) {
+  
+  #menus fieldset .card:nth-child(4) {
     -webkit-animation: open-card 1s 350ms backwards ease-in-out;
+    -moz-animation: open-card 1s 350ms backwards ease-in-out;
     animation: open-card 1s 350ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(7) {
-    -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-    animation: open-card 1s 0ms backwards ease-in-out;
-  }
-  #menus .card-container .card:nth-child(8) {
+  #menus fieldset .card:nth-child(5) {
     -webkit-animation: open-card 1s 450ms backwards ease-in-out;
+    -moz-animation: open-card 1s 450ms backwards ease-in-out;
     animation: open-card 1s 450ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(9) {
+  #menus fieldset .card:nth-child(6) {
     -webkit-animation: open-card 1s 550ms backwards ease-in-out;
+    -moz-animation: open-card 1s 550ms backwards ease-in-out;
     animation: open-card 1s 550ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(10) {
+  #menus fieldset .card:nth-child(7) {
     -webkit-animation: open-card 1s 650ms backwards ease-in-out;
+    -moz-animation:open-card 1s 650ms backwards ease-in-out;
     animation: open-card 1s 650ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(11) {
-    -webkit-animation: open-card 1s 0ms backwards ease-in-out;
-    animation: open-card 1s 0ms backwards ease-in-out;
-  }
-  #menus .card-container .card:nth-child(12) {
+  #menus fieldset .card:nth-child(8) {
     -webkit-animation: open-card 1s 750ms backwards ease-in-out;
+    -moz-animation: open-card 1s 750ms backwards ease-in-out;
     animation: open-card 1s 750ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(13) {
+  #menus .card-container .card:nth-child(9) {
     -webkit-animation: open-card 1s 850ms backwards ease-in-out;
+    -moz-animation: open-card 1s 850ms backwards ease-in-out;
     animation: open-card 1s 850ms backwards ease-in-out;
-  }#menus .card-container .card:nth-child(14) {
+  }
+  #menus .card-container .card:nth-child(10) {
     -webkit-animation: open-card 1s 950ms backwards ease-in-out;
+    -moz-animation: open-card 1s 950ms backwards ease-in-out;
     animation: open-card 1s 950ms backwards ease-in-out;
   }
+  
   
   
   

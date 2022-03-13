@@ -90,31 +90,41 @@
 #menus {
     display: flex;
     flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
     width: 100%;    
     .top_banniere img{
-      width:320px;
+      width:100%;
+      object-fit: cover;
+      }
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 25px;
+        position: relative;
+        top: -45px;
+        border:none;
+        border-radius: 40px;  
+        width:100%;
+        background-color: whitesmoke;
+        color: black;
+        text-decoration: none;
       }
 }
 
-#menus .menu-container .menu-title{
+#menus .menu-title{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 12px;
-    height: 70px;
-    
+    height: 70px;    
+    width: 100%;
     h3{    
     font: normal normal 22px/ 33px "Shrikhand", tahoma;  
     }   
   }
 
-.menu-container h4 { 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
+
+#menus h4 { 
     white-space: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -124,41 +134,17 @@
     white-space: none;
     padding-top: 2px;
     }
-  }
-
-#menus .menu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 25px;
-  position: relative;
-  top: -45px;
-  border:none;
-  border-radius: 40px;  
-  width:100%;
-  background-color: whitesmoke;
-  color: black;
-  text-decoration: none;
-  fieldset{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    margin: 0px;
-  h5{
-    font-weight: bold;
-    text-overflow: ellipsis;
-  }
-  p{
-    text-overflow: ellipsis;
-  }
+  
   .button{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     height: 50px;
-      }
+    }
+  fieldset{
+    display: flex;
+    flex-direction:column;  
   }
 }
 
@@ -167,18 +153,23 @@ form fieldset{
   outline:none;
 } 
   
-#menus .card label
+#menus .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+label
     {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5px;
   border: none;
+  margin: 5px;
   box-shadow: 0px 5px 5px 0px rgb(184, 183, 183);
   border-radius: 20px;
-  height: 80px;
-  width: 100%;
+  height: 70px;
+  width: 80%;
   overflow:hidden;
   cursor: pointer;
    
@@ -187,9 +178,8 @@ form fieldset{
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    text-align: left;
-    padding-left: 4px; 
-    width: 65%;
+    padding-left: 8px; 
+    width: 80%;
     font-size: 14px;
     white-space:nowrap;
     
@@ -200,16 +190,16 @@ form fieldset{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;    
-    height: 100%;
-    width: 35%;
+    height: 70px;
+    width: 20%;
          
     p {  
       display:flex;
       flex-direction:column;
       justify-content:end;
       font-weight: bold;
-      height: 100%;
-      padding-right: 5px;
+      height: 70px;
+      width: 30%;
       padding-bottom: 12px;
       }
 
@@ -222,18 +212,17 @@ form fieldset{
     font-size: x-large;
     position:relative;
     right: -70px;
-    height: 100%;
-    width: 50%;
+    height: 70px;
+    width: 70%;
     overflow:hidden;    
     border-radius: 0px 20px 20px 0px;
     
     }
   }
 } 
-    
+}    
 
-    .menu-text{
-    
+#menus label .menu-text{    
      p {
       text-overflow: ellipsis;
       display: inline;
@@ -241,12 +230,13 @@ form fieldset{
     white-space: nowrap;
         }
       h5{
+        font-weight: bold;
         text-overflow: ellipsis;
         display: inline;
         overflow: hidden;
       }
     }
-   
+
 
   
 
@@ -301,7 +291,7 @@ input:checked + label{
 }
 
 
- /*** MEDIA QUERIES*** Pour tablettes_taille d'écran min 768px***/ 
+ /*** MEDIA QUERIES*** Pour tablette_taille d'écran à partir de 768px***/ 
 
  @media screen and(min-width: 768px){
   
@@ -328,7 +318,15 @@ input:checked + label{
       width: 360px;
 
   }
- }
+ 
+ #menus {
+ 
+  .top_banniere img{
+    width:768px;
+    object-fit: cover;
+    }
+}
+}
  @media screen and(min-width: 992px){
 
   #restaurants 
@@ -348,9 +346,16 @@ input:checked + label{
       width: 360px;
 
   }
+  #menus {
+ 
+    .top_banniere img{
+      width:992px;
+      object-fit: cover;
+      }
+  }
  }
 
-/*
+/***
 @media screen and (min-width: 360px){
   #menus .card
     {
@@ -427,4 +432,4 @@ min-width: 95%;
 
   }
 }
-*/
+***/
