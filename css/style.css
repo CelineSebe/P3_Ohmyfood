@@ -427,6 +427,7 @@ main {
 }
 #menus .top_banniere img {
   width: 100%;
+  height: 340px;
   object-fit: cover;
 }
 #menus .menu-container {
@@ -436,7 +437,7 @@ main {
   align-items: center;
   padding-top: 25px;
   position: relative;
-  top: -45px;
+  top: -65px;
   border: none;
   border-radius: 40px 40px 0px 0px;
   width: 100%;
@@ -534,9 +535,8 @@ form fieldset {
   justify-content: flex-end;
   font-weight: bold;
   height: 100%;
-  width: 40%;
+  width: 50%;
   padding-bottom: 12px;
-  padding-right: 10px;
 }
 #menus .card label .container .check {
   display: flex;
@@ -546,7 +546,7 @@ form fieldset {
   background-color: #99E2D0;
   font-size: x-large;
   height: 100%;
-  width: 60%;
+  width: 50%;
   overflow: hidden;
   border-radius: 0px 20px 20px 0px;
 }
@@ -575,6 +575,12 @@ input:checked + label .container i {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
+input:checked + label .container .cost {
+  transform-origin: 0px;
+  -webkit-transform-origin: 0px;
+  -moz-transform-origin: 0px;
+  -o-transform-origin: 0px;
+}
 input:checked + label .container {
   transform: translateX(-70px);
   -webkit-transform: translateX(-70px);
@@ -594,6 +600,17 @@ input:checked + label .container i {
   -webkit-transition: transform 500ms ease-in-out;
   -moz-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
+}
+input:checked + label .container .cost {
+  transform-origin: right -30px;
+  -webkit-transform-origin: right -30px;
+  -moz-transform-origin: right -30px;
+  -o-transform-origin: right -30px;
+  transform: translateX(10px);
+  transition: transform 600ms ease-in-out;
+  -webkit-transition: transform 600ms ease-in-out;
+  -moz-transition: transform 600ms ease-in-out;
+  -o-transition: transform 600ms ease-in-out;
 }
 
 #menus input {
