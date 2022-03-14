@@ -55,6 +55,9 @@ main
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: center;  
+        h1{
+          width: 230px;
+        }
   }
 
 #functioning 
@@ -64,11 +67,8 @@ main
   justify-content: center;
   width:100%;
   margin:10px auto;
-  padding: 20px;
-  h3{
-    padding-left:10px;
-    text-align:left;   
-  }
+  padding: 5%;
+
   ul{
     display: flex;
     flex-direction: column;
@@ -132,6 +132,11 @@ main
       margin:20px;
     }
 }
+#search-restaurant{
+  h1{
+    width: 100%;
+  }
+}
 }
 @media screen and(min-width: 992px){
       
@@ -143,6 +148,7 @@ main
     justify-content: center;
     align-items:center;
     }
+
   }
     
   

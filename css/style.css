@@ -180,11 +180,27 @@ header #top-logo img {
   justify-content: center;
   align-items: center;
 }
+header #top-logo .link {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  object-fit: cover;
+}
 header #top-logo .button-return {
   position: relative;
-  right: 50px;
+  right: 80px;
 }
 
+@media screen and (min-width: 768px) {
+  header .top_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 /***MAIN***/
 main {
   width: 100%;
@@ -237,6 +253,9 @@ main {
   padding-bottom: 20px;
   text-align: center;
 }
+#search-restaurant h1 {
+  width: 230px;
+}
 
 #functioning {
   display: flex;
@@ -244,11 +263,7 @@ main {
   justify-content: center;
   width: 100%;
   margin: 10px auto;
-  padding: 20px;
-}
-#functioning h3 {
-  padding-left: 10px;
-  text-align: left;
+  padding: 5%;
 }
 #functioning ul {
   display: flex;
@@ -304,6 +319,10 @@ main {
   #functioning ul {
     margin: 20px;
   }
+
+  #search-restaurant h1 {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) {
   #functioning ul {
@@ -316,6 +335,8 @@ main {
 #restaurants {
   background-color: whitesmoke;
   width: 100%;
+  padding: 5%;
+  padding-left: 30px;
 }
 
 #restaurants .card-container {
@@ -336,7 +357,7 @@ main {
   border: none;
   box-shadow: 0px 5px 20px #b8b7b7;
   border-radius: 20px;
-  width: 360px;
+  width: 95%;
 }
 #restaurants .card:hover {
   transform: scale(1.05);
@@ -396,8 +417,6 @@ main {
 }
 
 #menus {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 #menus .top_banniere {
@@ -419,11 +438,19 @@ main {
   position: relative;
   top: -45px;
   border: none;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   width: 100%;
   background-color: whitesmoke;
   color: black;
   text-decoration: none;
+}
+#menus .menu-container .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 50px;
 }
 
 #menus .menu-title {
@@ -435,35 +462,31 @@ main {
   width: 100%;
 }
 #menus .menu-title h3 {
-  font: normal normal 22px/33px "Shrikhand", tahoma;
+  font: normal normal 30px/33px "Shrikhand", tahoma;
 }
 
 #menus h4 {
   white-space: none;
-  padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 12px;
 }
 #menus h4 span {
-  border-bottom: solid 2px #99E2D0;
+  border-bottom: solid 3px #99E2D0;
   white-space: none;
-  padding-top: 2px;
+  padding-bottom: 5px;
 }
-#menus h4 .button {
+
+#menus form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
-}
-#menus h4 fieldset {
-  display: flex;
-  flex-direction: column;
 }
 
 form fieldset {
   border: none;
   outline: none;
+  margin-top: 40px;
 }
 
 #menus .card {
@@ -589,9 +612,6 @@ input[type=checkbox]:checked + label {
 /*** MEDIA QUERIES*** Pour tablette_taille d'écran à partir de 768px***/
 @media screen and (min-width: 768px) {
   #restaurants {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     padding: 10px;
   }
   #restaurants h3 {
@@ -605,18 +625,15 @@ input[type=checkbox]:checked + label {
 
   #restaurants .card {
     margin: 20px;
-    border: none;
-    box-shadow: 0px 5px 20px #b8b7b7;
-    border-radius: 20px;
     width: 360px;
   }
 
   #menus .menu-title {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 4px;
     height: 90px;
   }
 
@@ -629,40 +646,25 @@ input[type=checkbox]:checked + label {
     padding-top: 25px;
     position: relative;
     top: -55px;
-    border: none;
-    border-radius: 40px;
-    width: 100%;
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
   }
 
-  form {
+  #menus form {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 20px;
   }
-  form fieldset {
+  #menus form fieldset {
     margin: 10px 5px;
   }
-  form h4 {
+  #menus form h4 {
     text-align: center;
   }
 }
-@media screen and (min-width: 992px) {
-  #restaurants .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
+@media screen and (min-width: 768px) and (min-width: 992px) {
   #restaurants .card {
     margin: 50px;
-    border: none;
-    box-shadow: 0px 5px 20px #b8b7b7;
-    border-radius: 20px;
-    width: 360px;
   }
 
   #menus.menu-container {
@@ -672,95 +674,10 @@ input[type=checkbox]:checked + label {
     width: 100%;
   }
 
-  form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  form fieldset {
+  fieldset {
     margin: 10px 5px;
   }
 }
-/***
-@media screen and (min-width: 360px){
-  #menus .card
-    {
-  margin: 10px 5px 10px 5px;
-
-      .menu-text {  
-    padding-left: 8px; 
-    width: 60%;    
-    font-size:16px;
-    }
-      .container
-    {
-    width: 40%;
-
-        p {  
-        padding-bottom:12px;
-          }
-        .check {       
-        width: 45%;
-        border-radius: 0px 20px 20px 0px;        
-          }
-    }
-  } 
-}
-
- @media screen and(min-width: 420px){
-
-
-  #menus {    
-    min-width: 420px;
-    .top_banniere img{
-      min-width:420px;
-           }      
-
-  #menus .menu-container{
-    min-width:420px;
-  }
-  #menus .card
-  {
-margin: 20px;
-min-width: 95%;
-
-    .menu-text {  
-  padding-left: 12px; 
-  min-width: 70%;    
-  font-size:16px;
-  }
-    .container
-  {
-  min-width: 30%;
-  padding-left: 0px;  
-      p {  
-      padding-bottom:12px;      
-        }
-      .check {      
-      width: 50%;
-      border-radius: 0px 20px 20px 0px;        
-        }
-  }
-} 
-
-
-
-@media screen and(min-width: 992px){
-
-
-    #restaurants .card{ 
-      margin-left: 50px;
-      margin-right: 50px;
-      border: none;
-      box-shadow: 0px 5px 20px rgb(184, 183, 183);
-      border-radius: 20px;
-      width: 360px;
-
-  }
-}
-***/
 /***Section footer***/
 footer {
   display: flex;
@@ -770,8 +687,6 @@ footer {
   flex-wrap: nowrap;
   text-decoration: none;
   color: whitesmoke;
-  margin: auto;
-  margin-top: 10px;
   text-indent: 8px;
   min-height: 150px;
   width: 100%;
@@ -785,7 +700,7 @@ footer .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 22px;
+  line-height: 26px;
   height: 160px;
   width: 100%;
   background-color: #535050;
@@ -841,6 +756,7 @@ footer .footer-nav a {
 .button {
   background: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
   font-size: 18px;
+  font-family: "roboto", tahoma, sans-serif;
   color: whitesmoke;
   box-sizing: content-box;
   padding: 5px;
