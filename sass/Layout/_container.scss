@@ -74,7 +74,7 @@
     font-weight:lighter;
     color: black;
     
-    &:hover {
+    &:active, &:hover {
       animation: fill 0.3s ease-in-out;
       display: inline-block;
       opacity: 1;
@@ -99,6 +99,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding-top: 25px;
         position: relative;
         top: -45px;
@@ -155,7 +156,7 @@ form fieldset{
   
 #menus .card{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 
 label
@@ -169,7 +170,7 @@ label
   box-shadow: 0px 5px 5px 0px rgb(184, 183, 183);
   border-radius: 20px;
   height: 70px;
-  width: 80%;
+  width: 360px;
   overflow:hidden;
   cursor: pointer;
    
@@ -178,28 +179,33 @@ label
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding-left: 8px; 
-    width: 80%;
-    font-size: 14px;
+    padding-left: 20px; 
+    width: 70%;
+    font-size: 16px;
     white-space:nowrap;
-    
+    h5{
+      font-weight: bold;
+    }
+   
     }
      .container
     {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
-    height: 70px;
-    width: 20%;
+    align-items: center;  
+    position:relative;
+    right: -70px;  
+    height: 100%;
+    width: 30%;
          
     p {  
       display:flex;
       flex-direction:column;
       justify-content:end;
       font-weight: bold;
-      height: 70px;
-      width: 30%;
+      height: 100%;
+      width: 40%;
       padding-bottom: 12px;
       }
 
@@ -209,11 +215,9 @@ label
     align-items:center;
     color: whitesmoke;
     background-color: $tertiary-color;
-    font-size: x-large;
-    position:relative;
-    right: -70px;
-    height: 70px;
-    width: 70%;
+    font-size: x-large;    
+    height: 100%;
+    width: 60%;
     overflow:hidden;    
     border-radius: 0px 20px 20px 0px;
     
@@ -222,17 +226,16 @@ label
 } 
 }    
 
-#menus label .menu-text{    
-     p {
+#menus input:checked + label .menu-text{    
+      p {
       text-overflow: ellipsis;
-      display: inline;
+      display: inline-block;
       overflow: hidden;
     white-space: nowrap;
         }
-      h5{
-        font-weight: bold;
+       h5{        
         text-overflow: ellipsis;
-        display: inline;
+        display: inline-block;
         overflow: hidden;
       }
     }
@@ -318,13 +321,51 @@ input:checked + label{
       width: 360px;
 
   }
- 
+
+  #menus .menu-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    height: 90px;    
+  }
  #menus {
+   display:flex;
+   flex-direction:  column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
  
   .top_banniere img{
+    height: 260px;
     width:768px;
-    object-fit: cover;
+    object-fit: cover;    
     }
+    .menu-container{
+      padding-top: 25px;
+      position: relative;
+      top: -55px;
+      border:none;
+      border-radius: 40px;  
+      width:768px;
+      background-color: whitesmoke;
+      color: black;
+      text-decoration: none;
+    }
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+fieldset{
+  margin: 10px 5px;
+}
+h4{
+  text-align: center;
+}
 }
 }
  @media screen and(min-width: 992px){
@@ -347,12 +388,29 @@ input:checked + label{
 
   }
   #menus {
+  width: 100%;
+   .top_banniere img{
+     height: 260px;
+     width: 1140px;   
+     }
+     .menu-container{
+       padding-top: 25px;
+       position: relative;
+       top: -55px; 
+       width:100%;
+     }
+ }
  
-    .top_banniere img{
-      width:992px;
-      object-fit: cover;
-      }
+ form{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  fieldset{
+    margin: 10px 5px;
   }
+ }
  }
 
 /***

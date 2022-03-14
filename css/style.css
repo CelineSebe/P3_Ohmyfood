@@ -6,11 +6,13 @@
     opacity: 0;
     transform: translateY(0.3);
     -webkit-transform: translateY(0.3);
+    -moz-transform: translateY(0.3);
   }
   100% {
     opacity: 1;
     transform: translateY(1);
     -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
   }
 }
 #menus fieldset .card:nth-child(1) {
@@ -61,13 +63,13 @@
   animation: open-card 1s 750ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(9) {
+#menus fieldset .card:nth-child(9) {
   -webkit-animation: open-card 1s 850ms backwards ease-in-out;
   -moz-animation: open-card 1s 850ms backwards ease-in-out;
   animation: open-card 1s 850ms backwards ease-in-out;
 }
 
-#menus .card-container .card:nth-child(10) {
+#menus fieldset .card:nth-child(10) {
   -webkit-animation: open-card 1s 950ms backwards ease-in-out;
   -moz-animation: open-card 1s 950ms backwards ease-in-out;
   animation: open-card 1s 950ms backwards ease-in-out;
@@ -143,7 +145,7 @@ i.far {
   color: black;
   font-weight: lighter;
 }
-i.far:hover {
+i.far:active {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -151,6 +153,8 @@ i.far:hover {
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   font-weight: bolder;
 }
 
@@ -382,7 +386,7 @@ section #search-restaurant {
   font-weight: lighter;
   color: black;
 }
-#restaurants .card-body i.far:hover {
+#restaurants .card-body i.far:active, #restaurants .card-body i.far:hover {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -406,6 +410,7 @@ section #search-restaurant {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 25px;
   position: relative;
   top: -45px;
@@ -459,7 +464,7 @@ form fieldset {
 
 #menus .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 #menus .card label {
@@ -472,7 +477,7 @@ form fieldset {
   box-shadow: 0px 5px 5px 0px #b8b7b7;
   border-radius: 20px;
   height: 70px;
-  width: 80%;
+  width: 360px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -481,26 +486,31 @@ form fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding-left: 8px;
-  width: 80%;
-  font-size: 14px;
+  padding-left: 20px;
+  width: 70%;
+  font-size: 16px;
   white-space: nowrap;
+}
+#menus .card label .menu-text h5 {
+  font-weight: bold;
 }
 #menus .card label .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  width: 20%;
+  position: relative;
+  right: -70px;
+  height: 100%;
+  width: 30%;
 }
 #menus .card label .container p {
   display: flex;
   flex-direction: column;
   justify-content: end;
   font-weight: bold;
-  height: 70px;
-  width: 30%;
+  height: 100%;
+  width: 40%;
   padding-bottom: 12px;
 }
 #menus .card label .container .check {
@@ -510,24 +520,21 @@ form fieldset {
   color: whitesmoke;
   background-color: #99E2D0;
   font-size: x-large;
-  position: relative;
-  right: -70px;
-  height: 70px;
-  width: 70%;
+  height: 100%;
+  width: 60%;
   overflow: hidden;
   border-radius: 0px 20px 20px 0px;
 }
 
-#menus label .menu-text p {
+#menus input:checked + label .menu-text p {
   text-overflow: ellipsis;
-  display: inline;
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
-#menus label .menu-text h5 {
-  font-weight: bold;
+#menus input:checked + label .menu-text h5 {
   text-overflow: ellipsis;
-  display: inline;
+  display: inline-block;
   overflow: hidden;
 }
 
@@ -602,9 +609,50 @@ input[type=checkbox]:checked + label {
     width: 360px;
   }
 
+  #menus .menu-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+  }
+
+  #menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   #menus .top_banniere img {
+    height: 260px;
     width: 768px;
     object-fit: cover;
+  }
+  #menus .menu-container {
+    padding-top: 25px;
+    position: relative;
+    top: -55px;
+    border: none;
+    border-radius: 40px;
+    width: 768px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  form fieldset {
+    margin: 10px 5px;
+  }
+  form h4 {
+    text-align: center;
   }
 }
 @media screen and (min-width: 992px) {
@@ -622,9 +670,29 @@ input[type=checkbox]:checked + label {
     width: 360px;
   }
 
+  #menus {
+    width: 100%;
+  }
   #menus .top_banniere img {
-    width: 992px;
-    object-fit: cover;
+    height: 260px;
+    width: 1140px;
+  }
+  #menus .menu-container {
+    padding-top: 25px;
+    position: relative;
+    top: -55px;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  form fieldset {
+    margin: 10px 5px;
   }
 }
 /***

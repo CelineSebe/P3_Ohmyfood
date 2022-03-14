@@ -73,7 +73,7 @@ i.far {
     font-size: xx-large;
     color: black;
     font-weight:lighter;
-    &:hover {
+    &:active {
       animation: fill 0.3s ease-in-out;
       display: inline-block;
       opacity: 1;
@@ -81,6 +81,8 @@ i.far {
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
-        font-weight:bolder;
+      -moz-background-clip: text;
+      -moz-text-fill-color:transparent;
+    font-weight:bolder;
     }
 }

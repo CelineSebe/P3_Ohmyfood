@@ -10,11 +10,13 @@ $tertiary-color: #99E2D0;
       opacity: 0;
       transform: translateY(0.3);
       -webkit-transform: translateY(0.3);
+      -moz-transform:translateY(0.3);
     }
     100% {
       opacity: 1;
       transform: translateY(1);
       -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
     }
   }
   
@@ -62,12 +64,12 @@ $tertiary-color: #99E2D0;
     -moz-animation: open-card 1s 750ms backwards ease-in-out;
     animation: open-card 1s 750ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(9) {
+  #menus fieldset .card:nth-child(9) {
     -webkit-animation: open-card 1s 850ms backwards ease-in-out;
     -moz-animation: open-card 1s 850ms backwards ease-in-out;
     animation: open-card 1s 850ms backwards ease-in-out;
   }
-  #menus .card-container .card:nth-child(10) {
+  #menus fieldset .card:nth-child(10) {
     -webkit-animation: open-card 1s 950ms backwards ease-in-out;
     -moz-animation: open-card 1s 950ms backwards ease-in-out;
     animation: open-card 1s 950ms backwards ease-in-out;
