@@ -7,7 +7,7 @@
             <script src="https://kit.fontawesome.com/bc4fad6d34.js" crossorigin="anonymous"></script>
             <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-            <link  rel= "stylesheet" href= "./.Public/css/style.css">
+            <link  rel= "stylesheet" href= "./css/style.css">
         </head>
 
         <body>
@@ -29,146 +29,177 @@
                 <section id="menus">
                     <div class="top_banniere">
                         <a href="lapalettedugout.html" target="blank">
-                            <img src="images/restaurants/xsmall/jay-wennington-N_Y88TWmGwA-xsmall.jpg" alt="la palette du goût">
-                        <a>
+                            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
+                        </a>
                     </div>
                     <div class="menu-container">
                         <div class="menu-title">
                             <h3> La palette du goût </h3>
                             <i class="far fa-heart" aria-hidden="true"></i>
                         </div>
-                        <h4><span>ENTR</span>&Eacute;ES </h4>
-                        <div class="card-container">
-                        <div class= "card">                            
-                            <div class="menu-text">
-                                <h5> Fricassée d'escargot </h5>
-                                <p> Au piment d'Espelette </p>                                
-                            </div>
-                            <div class="container">
-                                <p>25&euro;<br></p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Foie gras de canard mi-cuit </h5>
-                                <p> Et ses copeaux de truffe noire </p>
-                            </div>
-                            <div class="container">
-                                <p>35&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Oeuf au plat </h5>
-                                <p> Assaisonné à la truffe sur lit de caviar </p>
-                            </div>
-                            <div class="container">
-                                <p>20&euro;</p> 
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>                               
-                            </div>
-                        </div>
+                        <form autocomplete="off">
+                            <fieldset>
+                                <h4><span>ENTR</span>&Eacute;ES </h4>
+                                    <div class= "card">
+                                        <input type="checkbox" name="entree" id="escargot">                                 
+                                        <label for="escargot">                                                                   
+                                            <span class="menu-text">
+                                                <span class="title"> Fricassée d'escargot </span>
+                                                <span class="para"> Au piment d'Espelette </span>                                
+                                            </span>
+                                            <span class="container">
+                                                <span class="cost">25&euro;<br></span>
+                                                <span class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                <div class= "card">
+                                    <input type="checkbox" name="entree" id="micuit">                                 
+                                    <label for="micuit">
+                                        <span class="menu-text">
+                                            <span class="title"> Foie gras de canard mi-cuit </span>
+                                            <span class="para"> Et ses copeaux de truffe noire </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">35&euro; </span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class= "card">
+                                    <input type="checkbox" name="entree" id="oeuf">                                 
+                                    <label for="oeuf">
+                                        <span class="menu-text">
+                                            <span class="title"> Oeuf au plat </span>
+                                            <span class="para"> Assaisonné à la truffe sur lit de caviar </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">20&euro;</span> 
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>                               
+                                        </span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                            <h4><span>PLAT</span>S</h4>                            
+                                <div class= "card">
+                                    <input type="checkbox" name="plats" id="filet">                                 
+                                    <label for="filet">
+                                        <span class="menu-text">
+                                            <span class="title"> Filet de boeuf aux herbes</span>
+                                            <span class="para"> Accompagné de sa ribambelle de légumes </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">40&euro; </span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class= "card">
+                                    <input type="checkbox" name="plats" id="parmentier">                                 
+                                    <label for="parmentier">
+                                        <span class="menu-text">
+                                            <span class="title">Parmentier de queue de boeuf </span>
+                                            <span class="para"> À la truffe noire sur sa purée de panais </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">35&euro; </span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class= "card">
+                                    <input type="checkbox" name="plats" id="turbot">                                 
+                                    <label for="turbot">
+                                        <span class="menu-text">
+                                            <span class="title">Filet de Turbot </span>
+                                            <span class="para"> Aux agrumes </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">44&euro; </span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label >                            
+                                </div>
+                            </fieldset>
+                            <fieldset>                                
+                            <h4><span>DESS</span>ERTS </h4>                        
+                                <div class= "card">
+                                    <input type="checkbox" name="desserts" id="paris">                                 
+                                    <label for="paris">
+                                        <span class="menu-text">
+                                            <span class="title"> Paris-Brest </span>                            
+                                            <span class="para"> Revisité </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">18&euro;</span> 
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label>                                   
+                                </div>                        
+                                <div class= "card">
+                                    <input type="checkbox" name="desserts" id="macaron">                                 
+                                    <label for="macaron">
+                                        <span class="menu-text">
+                                            <span class="title"> Macaron au chocolat d'exception </span>
+                                            <span class="para"> Et glace à la vanille de Madagascar </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">22&euro;</span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span>
+                                        </span>
+                                    </label>                                    
+                                </div>
+                                <div class= "card">
+                                    <input type="checkbox" name="desserts" id="mousse">                                 
+                                    <label for="mousse">
+                                        <span class="menu-text">
+                                            <span class="title"> Mousse au chocolat </span>
+                                            <span class="para"> Au piment d'Espelette et à la truffe noire </span>
+                                        </span>
+                                        <span class="container">
+                                            <span class="cost">23&euro;</span>
+                                            <span class="check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </span> 
+                                        </span>
+                                    </label>                                   
+                                </div> 
+                            </fieldset>
+                        </form>                                          
+                        <button class="button">
+                            Commander
+                        </button>   
                     </div>
-                    <h4><span>PLAT</span>S</h4>
-                    <div class="card-container">
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Filet de boeuf aux herbes</h5>
-                                <p> Accompagné de sa ribambelle de légumes </p>
-                            </div>
-                            <div class="container">
-                                <p>40&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5>Parmentier de queue de boeuf </h5>
-                                <p> À la truffe noire sur sa purée de panais </p>
-                            </div>
-                            <div class="container">
-                                <p>35&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5>Filet de Turbot </h5>
-                                <p> Aux agrumes </p>
-                            </div>
-                            <div class="container">
-                                <p>44&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>                            
-                        </div>
-                        </div>
-                    <h4><span>DESS</span>ERTS </h4>
-                        <div class="card-container">
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Paris-Brest  </h5>                            
-                                <p> Revisité </p>
-                            </div>
-                            <div class="container">
-                                <p>18&euro;</p> 
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>                                   
-                        </div>                        
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Macaron au chocolat d'exception </h5>
-                                <p> Et glace à la vanille de Madagascar </p>
-                            </div>
-                            <div class="container">
-                                <p>22&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>                                    
-                        </div>
-                        <div class= "card">
-                            <div class="menu-text">
-                                <h5> Mousse au chocolat </h5>
-                                <p> Au piment d'Espelette et à la truffe noire </p>
-                            </div>
-                            <div class="container">
-                                <p>23&euro;</p>
-                                <span class="check">
-                                    <i class="fas fa-check-circle"></i>
-                                </span> 
-                            </div>                                   
-                        </div>                                           
-                    <input type=submit value="Commander" class="button">
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </main>
         
-        <footer>
-            <nav class="footer-nav">
-                <h6 class="footer-title"> ohmyfood </h6>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Proposer un restaurant</a></li>
-                        <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> Devenir partenaire </a></li>
-                        <li><a href="#"> Mentions légales </a> </li>
-                        <li><a href="mailto:ohmyfood@fakeemail.com" target="blank"> Contact </a></li>
-                    </ul>
-            </nav>
-        </footer>
-    </body>
-</html>
+            <footer>
+                <nav class="footer-nav">
+                    <h5 class="footer-title"> ohmyfood </h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Proposer un restaurant</a></li>
+                            <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> Devenir partenaire </a></li>
+                            <li><a href="#"> Mentions légales </a> </li>
+                            <li><a href="mailto:ohmyfood@fakeemail.com" target="blank"> Contact </a></li>
+                        </ul>
+                </nav>
+            </footer>
+        </body>
+    </html>

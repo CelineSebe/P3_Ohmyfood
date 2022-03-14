@@ -42,9 +42,9 @@ h4
     font: normal normal 18px/ 28px "Roboto", Tahoma;
     text-align: left;
 }
-h5
+h5, .title
 {
-    font: normal normal 18px/ 28px "Roboto", Tahoma;
+    font: normal bold 18px/ 28px "Roboto", Tahoma;
     text-align: left;
 }
 
@@ -61,9 +61,9 @@ ul {
 a {
     text-decoration:none;
 }  
-p
+p,.para
 {
-    font: normal bold 14px/ 20px "Roboto" Tahoma;
+    font: normal bold 12px/ 18px "Roboto" Tahoma;
     text-align: left;
 }
 
