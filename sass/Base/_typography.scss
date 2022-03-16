@@ -25,9 +25,8 @@ h1
 
 h2 
 {
-    font: normal normal 18px/ 26px "Roboto", Tahoma;
+    font: normal normal 18px/26px "Roboto", Tahoma;
     text-align: center;
-    line-height: 25px;
     padding-top: 20px;
 }
 
@@ -51,24 +50,20 @@ h5, .title
 a
 {
     color: black;
-    text-align: center;    
+    text-align: center;  
+    text-decoration:none;  
 }
 
 ul {
     list-style-type: none;                    
     }
-  
-a {
-    text-decoration:none;
-}  
+ 
 p,.para
 {
-    font: normal bold 12px/ 18px "Roboto" Tahoma;
     text-align: left;
 }
 
 i.far {
-    justify-content: right;
     cursor: pointer;
     font-size: xx-large;
     color: black;

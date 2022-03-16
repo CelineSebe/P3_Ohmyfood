@@ -4,15 +4,15 @@
 @keyframes open-card {
   0% {
     opacity: 0;
-    transform: translateY(0.3);
-    -webkit-transform: translateY(0.3);
-    -moz-transform: translateY(0.3);
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    transform: translateY(1);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
   }
 }
 #menus fieldset .card:nth-child(1) {
@@ -101,7 +101,6 @@ h1 {
 h2 {
   font: normal normal 18px/26px "Roboto", Tahoma;
   text-align: center;
-  line-height: 25px;
   padding-top: 20px;
 }
 
@@ -123,23 +122,18 @@ h5, .title {
 a {
   color: black;
   text-align: center;
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 p, .para {
-  font: normal bold 12px/18px "Roboto" Tahoma;
   text-align: left;
 }
 
 i.far {
-  justify-content: right;
   cursor: pointer;
   font-size: xx-large;
   color: black;
@@ -181,7 +175,6 @@ header #top-logo img {
   align-items: center;
 }
 header #top-logo .link {
-  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +196,6 @@ header #top-logo .button-return {
 }
 /***MAIN***/
 main {
-  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -227,9 +219,6 @@ main {
   width: 100%;
 }
 #search #localisation {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
   background-color: #e2dddd;
   border: none;
   text-align: center;
@@ -247,14 +236,13 @@ main {
   align-items: center;
   width: 100%;
   background-color: #f3f0f0;
-  word-spacing: normal;
   font-weight: normal;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 #search-restaurant h1 {
-  width: 230px;
+  width: 45%;
 }
 
 #functioning {
@@ -270,30 +258,22 @@ main {
   flex-direction: column;
   align-items: center;
 }
-#functioning li {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
 #functioning .card-functioning {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   justify-content: space-around;
-  height: 50px;
-  width: 280px;
+  height: 60px;
+  width: 300px;
   background-color: #ece6e6;
   box-shadow: 0px 5px 20px #969393;
   margin: 20px;
-  padding: 10px;
   border-radius: 20px;
   border-top: none;
-  overflow-x: none;
 }
 #functioning .card-functioning .serial-number {
   position: absolute;
-  align-self: center;
   left: -15px;
   height: 28px;
   border-radius: 50%;
@@ -303,9 +283,15 @@ main {
   padding: 5px 10px 8px 8px;
 }
 #functioning .card-functioning i {
-  font: normal bold 25px/30px "Roboto" Tahoma;
-  position: relative;
+  position: absolute;
+  left: 30px;
   height: 20px;
+  padding-right: 5px;
+}
+#functioning .card-functioning span {
+  font-weight: bold;
+  position: absolute;
+  left: 60px;
 }
 
 /*** MEDIA QUERIES*** Petites tailles d'écran max 375px***/
@@ -399,10 +385,8 @@ main {
   font-weight: 800;
 }
 #restaurants .card-body i.far {
-  justify-content: right;
   cursor: pointer;
   font-size: xx-large;
-  font-weight: lighter;
   color: black;
 }
 #restaurants .card-body i.far:active, #restaurants .card-body i.far:hover {
@@ -417,6 +401,7 @@ main {
 }
 
 #menus {
+  background-color: whitesmoke;
   width: 100%;
 }
 #menus .top_banniere {
@@ -473,7 +458,6 @@ main {
 }
 #menus h4 span {
   border-bottom: solid 3px #99E2D0;
-  white-space: none;
   padding-bottom: 5px;
 }
 
@@ -499,10 +483,10 @@ form fieldset {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   border: none;
+  background-color: white;
   margin: 5px;
-  box-shadow: 0px 5px 5px 0px #b8b7b7;
+  box-shadow: 0px 3px 3px 0px #b8b7b7;
   border-radius: 20px;
   height: 70px;
   width: 380px;
@@ -516,7 +500,6 @@ form fieldset {
   align-items: left;
   padding-left: 12px;
   width: 70%;
-  font-size: 16px;
   white-space: nowrap;
 }
 #menus .card label .container {
@@ -602,11 +585,11 @@ input:checked + label .container i {
   -o-transition: transform 500ms ease-in-out;
 }
 input:checked + label .container .cost {
-  transform-origin: right -30px;
-  -webkit-transform-origin: right -30px;
-  -moz-transform-origin: right -30px;
-  -o-transform-origin: right -30px;
-  transform: translateX(10px);
+  transform-origin: right -20px;
+  -webkit-transform-origin: right -20px;
+  -moz-transform-origin: right -20px;
+  -o-transform-origin: right -20px;
+  transform: translateX(20px);
   transition: transform 600ms ease-in-out;
   -webkit-transition: transform 600ms ease-in-out;
   -moz-transition: transform 600ms ease-in-out;
@@ -723,7 +706,6 @@ footer .footer-nav {
   background-color: #535050;
   color: whitesmoke;
   text-decoration: none;
-  margin: 10px;
 }
 footer .footer-nav a {
   width: 100%;
@@ -734,30 +716,6 @@ footer .footer-nav a {
   line-height: 20px;
 }
 
-/*** MEDIA QUERIES***/
-/*
-@media screen and (min-width: 320px){
-    footer
-    {
-     min-height: 150px;
-     width: 320px;
-    }
-}
-
-@media screen and (min-width: 375px){
-    footer
-    {
-     width: 375px;
-    }
-}
-
-@media screen and (min-width: 420px){
-    footer
-    {
-     width: 100%;
-    }
-}
-*/
 @media screen and (min-width: 768px) {
   footer {
     display: flex;
