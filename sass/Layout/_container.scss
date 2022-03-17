@@ -140,7 +140,6 @@
   }
 
 #menus h4 { 
-    white-space: none;
     padding-bottom: 10px;
     padding-left: 12px;
     span{
@@ -186,7 +185,7 @@ label
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     padding-left: 12px; 
     width: 70%;
     white-space:nowrap;  
@@ -234,7 +233,7 @@ label
       text-overflow: ellipsis;
       display: inline-block;
       overflow: hidden;
-    white-space: nowrap;
+      white-space: nowrap;
         }
        .title{        
         text-overflow: ellipsis;
