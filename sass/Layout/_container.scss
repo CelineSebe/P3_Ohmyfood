@@ -140,6 +140,7 @@
   }
 
 #menus h4 { 
+    white-space: none;
     padding-bottom: 10px;
     padding-left: 12px;
     span{
@@ -185,7 +186,6 @@ label
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding-left: 12px; 
     width: 70%;
     white-space:nowrap;  
