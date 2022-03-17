@@ -661,7 +661,7 @@ input[type=checkbox]:checked + label {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   #restaurants .card {
     margin: 50px;
   }

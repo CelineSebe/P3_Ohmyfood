@@ -243,11 +243,11 @@ label
     }  
 
 input:checked + label{
-     .container{
-            transform: translateX(0px);
-          -webkit-transform: translateX(0px);
-          -moz-transform: translateX(0px);
-          -o-transform: translateX(0px);
+    .container{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
               i{
             transform: rotate(0deg);
           -webkit-transform: rotate(0deg);
@@ -310,46 +310,45 @@ input:checked + label{
 
  /*** MEDIA QUERIES*** Pour tablette_taille d'écran à partir de 768px***/ 
 
- @media screen and(min-width: 768px){
+@media screen and(min-width: 768px){
   
-  #restaurants 
-  {   
-  
-    padding: 10px;
+#restaurants{   
+  padding: 10px;
     h3{
-      text-align:center;
+    text-align:center;
     }
     .card-container{
-      display:flex;
-      flex-direction:row;
-      justify-content: center;      
+    display:flex;
+    flex-direction:row;
+    justify-content: center;      
     }
-  }
-    #restaurants .card{ 
-      margin: 20px;
-      width: 360px;
+}
 
-  }
+#restaurants .card{ 
+  margin: 20px;
+  width: 360px;
+}
 
-  #menus .menu-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px;
-    height: 90px;    
-  }
- #menus { 
+#menus .menu-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  height: 90px;    
+}
+
+#menus{ 
   .top_banniere img{
     height: 260px;
     width:100%;
     object-fit: cover;    
     }
-    .menu-container{
-      padding-top: 25px;
-      position: relative;
-      top: -55px;
-    }
+  .menu-container{
+    padding-top: 25px;
+    position: relative;
+    top: -55px;
+  }
 }
 
 #menus form{
@@ -358,30 +357,31 @@ input:checked + label{
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 20px;
-fieldset{
-  margin: 10px 5px;
-}
-h4{
-  text-align: center;
-}
-}
-
- @media screen and(min-width: 992px){
-
-    #restaurants .card{ 
-      margin: 50px;
-
-  }
-  #menus.menu-container{
-       padding-top: 25px;
-       position: relative;
-       top: -55px; 
-       width:100%;
-     }
-
   fieldset{
     margin: 10px 5px;
   }
- }
- }
+    h4{
+      text-align: center;
+      }
+  }
+}
+
+@media screen and(min-width: 992px){
+
+#restaurants .card{ 
+margin: 50px;
+}
+
+#menus.menu-container{
+padding-top: 25px;
+position: relative;
+top: -55px; 
+width:100%;
+  }
+
+fieldset{
+margin: 10px 5px;
+  }
+}
+ 
 
