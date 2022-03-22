@@ -273,11 +273,11 @@ main {
   border-top: none;
   cursor: pointer;
 }
-#functioning .card-functioning:hover {
+#functioning .card-functioning:hover, #functioning .card-functioning:active {
   box-shadow: 0px 7px 15px #969393;
   background-color: #e2e6e6;
 }
-#functioning .card-functioning:hover i {
+#functioning .card-functioning:hover i, #functioning .card-functioning:active i {
   color: #9356DC;
 }
 #functioning .card-functioning .serial-number {
