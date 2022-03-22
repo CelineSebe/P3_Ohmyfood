@@ -1,4 +1,35 @@
-
+.ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
 #restaurants
 {
   background-color: whitesmoke;
@@ -74,14 +105,14 @@
     color: black;
     
     &:active, &:hover {
-      animation: fill 0.3s ease-in-out;
-      display: inline-block;
-      opacity: 1;
+      animation: fill 0.5s ease-in-out;
       background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
       background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-      -webkit-background-clip: text;
+      -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
       font-weight:bolder;
+      display: inline-block;
+      opacity: 1;
       } 
     }
   }
@@ -178,7 +209,7 @@ label
   box-shadow: 0px 3px 3px 0px rgb(184, 183, 183);
   border-radius: 20px;
   height: 70px;
-  width: 380px;
+  width: 400px;
   overflow:hidden;
   cursor: pointer;
    
@@ -186,7 +217,7 @@ label
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 12px; 
+    padding-left: 8px; 
     width: 70%;
     white-space:nowrap;  
 }
@@ -208,8 +239,7 @@ label
       font-weight: bold;
       height: 100%;
       width: 50%;
-      padding-bottom: 12px;
-
+      padding-bottom: 11px;
       }
 
    .check {
@@ -229,18 +259,18 @@ label
 }  
 
 #menus input:checked + label .menu-text{    
-      .para {
+     .para {
       text-overflow: ellipsis;
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
         }
-       .title{        
+      .title{        
         text-overflow: ellipsis;
         display: inline-block;
         overflow: hidden;
       }
-    }  
+    } 
 
 input:checked + label{
     .container{
@@ -295,18 +325,71 @@ input:checked + label{
       }
   }
  }
+ input:not(:checked) + label{
+  
+  .container{
+    
+    transform: translateX(70px);
+    -webkit-transform: translateX(70px);
+    -moz-transform: translateX(70px);
+    -o-transform: translateX(70px);
+   transition: transform 500ms ease-in-out;
+   -webkit-transition: transform 500ms ease-in-out;
+   -moz-transition: transform 500ms ease-in-out;
+   -o-transition: transform 500ms ease-in-out;
+      i{ 
+     transform: rotate(-360deg);
+     -webkit-transform: rotate(-360deg);
+     -moz-transform: rotate(-360deg);
+     -o-transform: rotate(-360deg);
+     transition: transform 500ms ease-in-out;
+     -webkit-transition: transform 500ms ease-in-out;
+    -moz-transition: transform 500ms ease-in-out;
+    -o-transition: transform 500ms ease-in-out;
+      }
+      .cost{
+        transform-origin: right 20px;
+        -webkit-transform-origin: right 20px;
+        -moz-transform-origin: right 20px;
+        -o-transform-origin: right 20px;
+        transform: translateX(-20px);
+        transition: transform 600ms ease-in-out;
+        -webkit-transition: transform 600ms ease-in-out;
+        -moz-transition: transform 600ms ease-in-out;
+        -o-transition: transform 600ms ease-in-out;
+      }
+  }
+  .container{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+              i{
+            transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+                }
+                .cost{
+                  transform-origin: 0px;
+                  -webkit-transform-origin: 0px;
+                  -moz-transform-origin: 0px;
+                  -o-transform-origin: 0px;
+                }
+        }
+  }
 
  #menus input{
   position: absolute;
   left: -9999px;
 }
- input[type="checkbox"] +label {
-  display:none;
-}
+
  input[type="checkbox"]:checked +label { 
   display: block; 
 }
-
+input[type="checkbox"]:not(:checked) +label { 
+  display: block; 
+}
 
  /*** MEDIA QUERIES*** Pour tablette_taille d'écran à partir de 768px***/ 
 

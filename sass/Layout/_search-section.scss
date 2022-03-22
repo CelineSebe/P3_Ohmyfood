@@ -81,11 +81,12 @@ main
       justify-content: space-around;
       height: 60px;
       width: 300px;   
-      background-color: rgb(236, 230, 230);
-      box-shadow:0px 5px 20px  rgb(150, 147, 147);
+      background-color: whitesmoke;
+      box-shadow:0px 5px 10px  rgb(150, 147, 147);
       margin: 20px;
       border-radius: 20px;
       border-top: none;
+      cursor:pointer;
             
             .serial-number 
             {
@@ -94,7 +95,7 @@ main
             height: 28px;
             border-radius: 50%;
             font-weight: normal;
-            color: whitesmoke;
+            color: rgb(246, 240, 240);
             background-color: $primary-color;
             padding: 5px 10px 8px 8px;          
             }
@@ -105,12 +106,24 @@ main
               height: 20px;
               padding-right: 5px;
             }
+
             span{
               font-weight: bold;
               position: absolute;
               left: 60px;
             }
    }
+#functioning{
+  .card-functioning{
+   &:hover.card-functioning{
+     box-shadow:0px 7px 15px  rgb(150, 147, 147);
+     background-color:rgb(226, 230, 230);
+   }
+     &:hover i{
+      color: $primary-color;
+     }
+   }
+  }
 
    /*** MEDIA QUERIES*** Petites tailles d'écran max 375px***/ 
  

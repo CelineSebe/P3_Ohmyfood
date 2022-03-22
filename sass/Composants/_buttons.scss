@@ -14,6 +14,7 @@
     box-shadow: 0 5px 15px rgb(150, 147, 147);
     height: 50px;
     width: 260px; 
+    opacity: 1;
     
     
     &:hover
@@ -21,6 +22,8 @@
             transform: scale(1.02);
             transition: 0,2s;
             cursor: pointer;
+            opacity: 0.75;
+            box-shadow: 0 10px 20px rgb(150, 147, 147);
         }
         
  }

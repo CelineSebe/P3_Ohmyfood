@@ -76,7 +76,24 @@ $tertiary-color: #99E2D0;
     -moz-animation: open-card 1s 950ms backwards ease-in-out;
     animation: open-card 1s 950ms backwards ease-in-out;
   }
-  
+ 
+  @keyframes fill {
+    0% {
+      opacity: 0.4;
+    }
+
+    25% {
+      opacity: 0.6;
+    }
+
+    75% {
+      opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
   
   
   
