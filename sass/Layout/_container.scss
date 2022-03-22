@@ -276,7 +276,6 @@ input:checked + label{
                   -webkit-transform-origin: 0px;
                   -moz-transform-origin: 0px;
                   -o-transform-origin: 0px;
-                  padding-left: 0px;
                 }
         }
   
@@ -306,6 +305,9 @@ input:checked + label{
         -moz-transform-origin: right -20px;
         -o-transform-origin: right -20px;
         transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -o-transform: translateX(20px);
         transition: transform 600ms ease-in-out;
         -webkit-transition: transform 600ms ease-in-out;
         -moz-transition: transform 600ms ease-in-out;
@@ -342,11 +344,13 @@ input:checked + label{
         -moz-transform-origin: right 20px;
         -o-transform-origin: right 20px;
         transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
         transition: transform 600ms ease-in-out;
         -webkit-transition: transform 600ms ease-in-out;
         -moz-transition: transform 600ms ease-in-out;
         -o-transition: transform 600ms ease-in-out;
-        padding-left: 0px;
       }
   }
   .container{
@@ -365,7 +369,6 @@ input:checked + label{
                   -webkit-transform-origin: 0px;
                   -moz-transform-origin: 0px;
                   -o-transform-origin: 0px;
-                  padding-left: 0px;
                 }
         }
   }

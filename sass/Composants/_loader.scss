@@ -72,6 +72,9 @@
 
 .loader {
     animation: time_spin 3000ms ease-in-out both;
+    -webkit-animation: time_spin 3000ms ease-in-out both;
+    -moz-animation: time_spin 3000ms ease-in-out both;
+
   }
 
 @keyframes time_spin {
