@@ -87,7 +87,10 @@ main
       border-radius: 20px;
       border-top: none;
       cursor:pointer;
-            
+      &:hover{
+        box-shadow:0px 7px 15px  rgb(150, 147, 147);
+        background-color:rgb(226, 230, 230);
+      }
             .serial-number 
             {
             position: absolute;
@@ -105,6 +108,9 @@ main
               left:30px;   
               height: 20px;
               padding-right: 5px;
+              &:hover{
+                color: $primary-color;
+               }
             }
 
             span{
@@ -113,17 +119,7 @@ main
               left: 60px;
             }
    }
-#functioning{
-  .card-functioning{
-   &:hover.card-functioning{
-     box-shadow:0px 7px 15px  rgb(150, 147, 147);
-     background-color:rgb(226, 230, 230);
-   }
-     &:hover i{
-      color: $primary-color;
-     }
-   }
-  }
+
 
    /*** MEDIA QUERIES*** Petites tailles d'écran max 375px***/ 
  
