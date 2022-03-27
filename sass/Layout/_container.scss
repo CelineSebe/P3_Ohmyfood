@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   width: 100%;
   background-color: whitesmoke;
   word-spacing: normal;
@@ -219,7 +219,7 @@ label
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 8px; 
+    padding-left: 18px; 
     width: 70%;
     white-space:nowrap;  
 }
@@ -241,7 +241,8 @@ label
       font-weight: bold;
       height: 100%;
       width: 50%;
-      padding-bottom: 11px;
+      padding-bottom: 12px;
+      padding-left:8px;
       }
 
    .check {

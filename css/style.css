@@ -534,7 +534,7 @@ form fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 8px;
+  padding-left: 18px;
   width: 70%;
   white-space: nowrap;
 }
@@ -555,7 +555,8 @@ form fieldset {
   font-weight: bold;
   height: 100%;
   width: 50%;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
+  padding-left: 8px;
 }
 #menus .card label .container .check {
   display: flex;
@@ -796,9 +797,10 @@ footer .footer-nav {
   line-height: 26px;
   height: 160px;
   width: 100%;
-  background-color: #535050;
+  background-color: #3d3b3b;
   color: whitesmoke;
   text-decoration: none;
+  padding-left: 20px;
 }
 footer .footer-nav a {
   width: 100%;
